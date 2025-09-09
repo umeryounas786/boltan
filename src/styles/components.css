@@ -1,0 +1,399 @@
+@layer components {
+  .emergency-gradient {
+    @apply bg-gradient-to-r from-brand-red via-brand-red-light to-brand-red-dark;
+  }
+  .emergency-gradient span,
+  .emergency-gradient a {
+    color: var(--brand-white) !important;
+    font-weight: 700 !important;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  }
+  .emergency-gradient a:hover {
+    color: var(--brand-yellow-accent) !important;
+    text-decoration: underline;
+    opacity: 1;
+  }
+  .emergency-gradient .text-red-200-alpha-70 {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-weight: 500 !important;
+    text-shadow: none !important;
+  }
+
+  footer {
+    @apply bg-brand-slate-background text-brand-gray-medium border-t border-border;
+  }
+  footer a {
+    @apply text-brand-gray-medium hover:text-brand-red;
+  }
+  footer .group:hover span, footer .group:hover svg {
+    color: var(--brand-red) !important;
+  }
+  footer a[href^="tel:"].underline:hover, footer a[href^="mailto:"].underline:hover {
+    color: var(--brand-red-dark) !important;
+    opacity: 1;
+  }
+  footer .hover\\:text-green-400:hover span, footer .hover\\:text-green-400:hover svg,
+  footer .text-green-500 {
+   color: var(--brand-green-whatsapp-dark) !important;
+  }
+  footer .hover\\:text-blue-400:hover span, footer .hover\\:text-blue-400:hover svg,
+  footer .text-blue-500 {
+   color: #3b82f6 !important;
+  }
+  footer .font-black.text-white {
+    color: var(--brand-black-text);
+  }
+  footer .text-red-300 {
+    color: var(--brand-red);
+  }
+
+  .medical-gradient {
+    @apply bg-gradient-to-br from-brand-red-light to-[#ff7878];
+  }
+
+  .glass-effect, .glass-effect-light {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(12px) saturate(120%);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: var(--radius);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+  }
+
+  .nav-link {
+    @apply text-brand-gray-text transition-colors duration-200 ease-out;
+  }
+  .nav-link:hover {
+    @apply text-brand-red bg-[rgba(var(--brand-red-rgb),0.05)];
+  }
+
+  .nav-link-active {
+    color: var(--brand-red) !important;
+    @apply font-bold relative bg-[rgba(var(--brand-red-rgb),0.08)] !important;
+  }
+  .nav-link-active::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-[2.5px] bg-brand-red rounded-[1px];
+  }
+
+  .primary-cta {
+    @apply bg-brand-red text-brand-white font-bold px-[1.6rem] py-3 rounded-[--radius] transition-all duration-200 ease-custom-ease;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 7px rgba(var(--brand-red-rgb),0.2), inset 0 -2.5px 2px rgba(0,0,0,0.1);
+  }
+  .primary-cta:hover {
+    @apply bg-brand-red-dark -translate-y-1 scale-[1.045];
+    box-shadow: 0 7px 20px rgba(var(--brand-red-rgb), 0.3), inset 0 -1.5px 1px rgba(0,0,0,0.08);
+  }
+
+  .secondary-cta, .secondary-cta-white {
+    @apply border-2 border-brand-red text-brand-red bg-transparent font-bold rounded-[--radius] transition-all duration-200 ease-custom-ease;
+    padding: calc(0.75rem - 2px) calc(1.6rem - 2px);
+  }
+  .secondary-cta:hover, .secondary-cta-white:hover {
+    @apply bg-brand-red text-brand-white -translate-y-1 scale-[1.045];
+    box-shadow: 0 5px 14px rgba(var(--brand-red-rgb), 0.25);
+  }
+
+  .whatsapp-cta {
+    @apply border-2 border-brand-green-whatsapp text-brand-green-whatsapp bg-transparent font-bold rounded-[--radius] transition-all duration-200 ease-custom-ease;
+    padding: calc(0.75rem - 2px) calc(1.6rem - 2px);
+  }
+  .whatsapp-cta:hover {
+    @apply bg-brand-green-whatsapp text-brand-white -translate-y-1 scale-[1.045];
+    box-shadow: 0 5px 14px rgba(37, 211, 102, 0.3);
+  }
+  
+  .whatsapp-cta-on-dark-gradient, .whatsapp-cta-on-dark-gradient-contrast {
+    @apply border-2 border-brand-white bg-transparent text-brand-white font-bold rounded-[--radius] transition-all duration-200 ease-custom-ease;
+    padding: calc(0.75rem - 2px) calc(1.6rem - 2px);
+    box-shadow: 0 4px 12px rgba(0,0,0, 0.15);
+  }
+  .whatsapp-cta-on-dark-gradient:hover, .whatsapp-cta-on-dark-gradient-contrast:hover {
+    background: rgba(255, 255, 255, 0.15);
+    @apply text-brand-white -translate-y-1 scale-[1.045];
+    box-shadow: 0 7px 18px rgba(0,0,0, 0.2);
+  }
+  .whatsapp-cta-on-dark-gradient svg, .whatsapp-cta-on-dark-gradient-contrast svg {
+    color: var(--brand-white);
+  }
+
+  #cta-final .whatsapp-cta-on-dark-gradient-contrast,
+  .emergency-gradient .whatsapp-cta-on-dark-gradient,
+  .emergency-gradient .whatsapp-cta-on-dark-gradient-contrast {
+    @apply bg-brand-green-whatsapp border-brand-green-whatsapp text-brand-white;
+  }
+  #cta-final .whatsapp-cta-on-dark-gradient-contrast:hover,
+  .emergency-gradient .whatsapp-cta-on-dark-gradient:hover,
+  .emergency-gradient .whatsapp-cta-on-dark-gradient-contrast:hover {
+    @apply bg-brand-green-whatsapp-dark border-brand-green-whatsapp-dark text-brand-white;
+  }
+  #cta-final .whatsapp-cta-on-dark-gradient-contrast svg,
+  .emergency-gradient .whatsapp-cta-on-dark-gradient svg,
+  .emergency-gradient .whatsapp-cta-on-dark-gradient-contrast svg {
+     color: var(--brand-white);
+  }
+
+  .emergency-gradient .bg-white.text-red-600 {
+    background-color: var(--brand-white) !important;
+    color: var(--brand-red) !important;
+  }
+  .emergency-gradient .bg-white.text-red-600:hover {
+    background-color: hsl(var(--muted)) !important;
+  }
+  .emergency-gradient .bg-slate-800-alpha-80 {
+    background-color: rgba(0,0,0,0.2) !important;
+    color: var(--brand-white) !important;
+  }
+  .emergency-gradient .bg-slate-800-alpha-80:hover {
+    background-color: rgba(0,0,0,0.3) !important;
+    color: var(--brand-yellow-accent) !important;
+  }
+
+  .next-level-input {
+    background-color: hsl(var(--input));
+    border: 1px solid hsl(var(--border));
+    color: hsl(var(--foreground));
+    font-size: 16px; /* Prevent iOS zoom */
+    @apply px-4 py-3 rounded-[--radius] transition-colors duration-200 ease-in-out;
+  }
+  .next-level-input::placeholder {
+    color: hsl(var(--muted-foreground));
+  }
+  .next-level-input:focus {
+    outline: none;
+    border-color: hsl(var(--primary)); /* brand-red */
+    background-color: hsl(var(--brand-white));
+    box-shadow: 0 0 0 3.5px rgba(var(--brand-red-rgb), 0.25);
+  }
+  
+  /* Dark mode specific styles for inputs if not covered by light-theme-active overrides */
+  .bg-slate-900 .next-level-input, /* If modal parent has bg-slate-900 */
+  :not(.light-theme-active) .next-level-input { /* General fallback if not light theme */
+    background-color: hsl(var(--input)) !important; /* Or a darker input bg if defined */
+    border-color: hsl(var(--primary) / 0.5) !important; /* e.g. border-red-500/50 */
+    color: hsl(var(--brand-white)) !important;
+  }
+  :not(.light-theme-active) .next-level-input::placeholder {
+    color: hsl(var(--muted-foreground) / 0.7) !important; /* Lighter placeholder for dark bg */
+  }
+   :not(.light-theme-active) .next-level-input:focus {
+    border-color: hsl(var(--primary)) !important; /* brand-red */
+    background-color: hsl(var(--input)) !important; /* Or a slightly lighter dark bg for focus */
+    color: hsl(var(--brand-white)) !important;
+  }
+
+
+  .next-level-label {
+    @apply font-semibold mb-2.5 block text-sm;
+  }
+  /* Ensure label color is white on dark modal, black on light modal */
+  :not(.light-theme-active) .next-level-label {
+    color: hsl(var(--brand-white)) !important;
+  }
+  .light-theme-active .next-level-label {
+     color: var(--brand-gray-text) !important;
+  }
+
+
+  .hero-badge-home {
+    @apply absolute bg-[rgba(255,255,255,0.85)] z-10 p-4 sm:p-6 rounded-xl shadow-lg min-w-[300px] max-w-[calc(100%-1rem)];
+    backdrop-filter: blur(10px) saturate(130%);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    @apply top-[70%] right-[-2.5rem] transform -translate-y-1/2 min-w-[330px];
+    bottom: auto;
+    left: auto;
+  }
+  .hero-badge-home p:first-child {
+    color: var(--brand-black-text);
+  }
+  .hero-badge-home p:last-child {
+    color: var(--brand-red);
+  }
+  .hero-badge-home .bg-white-alpha-10 {
+    background-color: rgba(var(--brand-red-rgb),0.08);
+  }
+  .hero-badge-home .ring-white-alpha-25 {
+     ring-color: rgba(var(--brand-red-rgb),0.2);
+  }
+  
+  .hero-badge-home-mobile {
+    @apply relative bg-[rgba(255,255,255,0.85)] z-10 p-4 rounded-xl shadow-lg w-full mt-6;
+    backdrop-filter: blur(10px) saturate(130%);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .hero-badge-home-mobile p:first-child {
+    color: var(--brand-black-text);
+  }
+  .hero-badge-home-mobile p:last-child {
+    color: var(--brand-red);
+  }
+  .hero-badge-home-mobile .bg-white-alpha-10 {
+    background-color: rgba(var(--brand-red-rgb),0.08);
+  }
+  .hero-badge-home-mobile .ring-white-alpha-25 {
+     ring-color: rgba(var(--brand-red-rgb),0.2);
+  }
+
+
+  @media (min-width: 640px) { 
+    .hero-badge-home-mobile {
+      @apply absolute top-[70%] right-[-1rem] transform -translate-y-1/2 min-w-[300px] max-w-[calc(100%-1rem)] mt-0;
+      bottom: auto;
+      left: auto;
+    }
+  }
+  @media (min-width: 768px) { 
+    .hero-badge-home { 
+      @apply top-[70%] right-[-2.5rem] p-5 sm:p-6 min-w-[330px];
+    }
+    .hero-badge-home-mobile { 
+       @apply top-[70%] right-[-2.5rem] p-5 sm:p-6 min-w-[330px];
+    }
+  }
+  @media (min-width: 1024px) { 
+    .hero-badge-home, .hero-badge-home-mobile {
+      @apply top-[65%] right-[-3rem] p-5 sm:p-7;
+    }
+  }
+
+
+  .card-hover-effect {
+    @apply transition-all duration-300 ease-out;
+  }
+  .card-hover-effect:hover {
+    @apply -translate-y-1.5 scale-[1.025];
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08), 0 6px 12px rgba(var(--brand-red-rgb),0.05);
+  }
+  
+  #cta-final .text-white { color: #FFFFFF !important; }
+  #cta-final .opacity-95 { color: rgba(255,255,255,0.95) !important; }
+  #cta-final .text-red-300 { color: #fca5a5 !important; } 
+  #cta-final .text-red-200 { color: #fecaca !important; } 
+
+  .service-detail-modal-content.bg-brand-white .text-white {
+    color: var(--brand-gray-text) !important;
+  }
+  .service-detail-modal-content.bg-brand-white .text-slate-300 {
+    color: var(--brand-gray-medium) !important;
+  }
+  .service-detail-modal-content.bg-brand-white .text-slate-400 {
+    color: var(--brand-gray-medium) !important;
+  }
+  .service-detail-modal-content.bg-brand-white .dialog-title {
+    color: var(--brand-red) !important;
+  }
+  .service-detail-modal-content.bg-brand-white .bg-slate-800-alpha-50 {
+    background-color: hsl(var(--secondary)) !important;
+  }
+  .service-detail-modal-content.bg-brand-white .border-slate-700-alpha-50 {
+    border-color: hsl(var(--border)) !important;
+  }
+  .service-detail-modal-content.bg-brand-white .text-red-400 {
+    color: var(--brand-red) !important;
+  }
+  .service-detail-modal-content.bg-brand-white .text-red-300 {
+    color: var(--brand-red-dark) !important;
+  }
+  /* This rule ensures labels inside light theme modal are dark */
+  .service-detail-modal-content.bg-brand-white .next-level-label {
+    color: var(--brand-gray-text) !important;
+  }
+
+  .service-detail-modal-content.bg-brand-white .next-level-input {
+    background-color: hsl(var(--input)) !important; 
+    border-color: hsl(var(--border)) !important;
+    color: var(--brand-gray-text) !important;
+  }
+  .service-detail-modal-content.bg-brand-white .next-level-input::placeholder {
+    color: var(--brand-gray-medium) !important;
+  }
+  .service-detail-modal-content.bg-brand-white .next-level-input:focus {
+    background-color: hsl(var(--brand-white)) !important; 
+    border-color: var(--brand-red) !important;
+    box-shadow: 0 0 0 3.5px rgba(var(--brand-red-rgb), 0.25) !important;
+  }
+  .service-detail-modal-content.bg-brand-white .dialog-close-icon {
+    color: var(--brand-gray-medium) !important;
+  }
+  .service-detail-modal-content.bg-brand-white .dialog-close-icon:hover {
+    color: var(--brand-gray-text) !important;
+  }
+
+  .navbar-light-theme {
+    background-color: rgba(255, 255, 255, 0.85) !important;
+    backdrop-filter: blur(12px) saturate(150%) !important;
+    border-bottom-color: hsl(var(--border)) !important;
+  }
+  .navbar-light-theme .text-white {
+    color: var(--brand-black-text) !important;
+  }
+  .navbar-light-theme .text-red-300 {
+    color: var(--brand-red) !important;
+  }
+
+  .blog-card-light {
+    background: rgba(255, 255, 255, 0.75) !important;
+    backdrop-filter: blur(12px) saturate(120%) !important;
+    border: 1px solid rgba(0, 0, 0, 0.08) !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07) !important;
+  }
+  .blog-card-light:hover {
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08), 0 6px 12px rgba(var(--brand-red-rgb),0.05) !important;
+  }
+  .blog-card-light .text-white {
+    color: var(--brand-black-text) !important;
+  }
+  .blog-card-light .text-gray-300-alpha-90 {
+    color: var(--brand-gray-medium) !important;
+    opacity: 1 !important;
+  }
+  .blog-card-light .text-red-400 {
+    color: var(--brand-red) !important;
+  }
+  .blog-card-light .group-hover\\:text-red-300:hover {
+    color: var(--brand-red-dark) !important;
+  }
+  .blog-card-light .text-gray-400 {
+    color: var(--brand-gray-medium) !important;
+  }
+  .blog-card-light .text-gray-500 { 
+    color: hsla(0, 0%, 45.1%, 0.7) !important;
+  }
+
+  .dialog-close-button {
+    color: var(--brand-gray-medium) !important;
+  }
+  .dialog-close-button:hover {
+    color: var(--brand-gray-text) !important;
+  }
+
+  .prose-styles {
+    @apply text-lg text-brand-gray-text leading-relaxed;
+  }
+  .prose-styles h1, .prose-styles h2, .prose-styles h3 {
+    @apply font-bold text-brand-black-text;
+  }
+  .prose-styles h1 { @apply text-4xl lg:text-5xl mb-4; }
+  .prose-styles h2 { @apply text-3xl lg:text-4xl mt-10 mb-4; }
+  .prose-styles h3 { @apply text-2xl lg:text-3xl mt-8 mb-4; }
+  .prose-styles p { @apply mb-6; }
+  .prose-styles a { @apply text-brand-red font-semibold hover:underline; }
+  .prose-styles ul { @apply list-disc list-inside space-y-3 mb-6 pl-2; }
+  .prose-styles ol { @apply list-decimal list-inside space-y-3 mb-6 pl-2; }
+  .prose-styles li { @apply pl-2; }
+  .prose-styles blockquote {
+    @apply border-l-4 border-brand-red bg-red-500/10 p-4 my-6 rounded-r-lg;
+  }
+  .prose-styles blockquote p {
+    @apply text-brand-red-dark not-italic font-medium mb-0;
+  }
+  .prose-styles img {
+    @apply rounded-xl shadow-lg my-8;
+  }
+  .prose-styles .blog-meta {
+    @apply flex items-center gap-6 text-sm text-brand-gray-medium mb-8 pb-8 border-b border-slate-200;
+  }
+  .prose-styles .blog-meta > div {
+    @apply flex items-center gap-2;
+  }
+}

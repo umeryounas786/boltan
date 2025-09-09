@@ -1,0 +1,81 @@
+import React from 'react';
+import { Helmet } from 'react-helmet-async';
+import { motion } from 'framer-motion';
+import { Clock, User } from 'lucide-react';
+import FaqAccordion from '@/components/FaqAccordion';
+
+const post = {
+  title: "Emergency Dentist in Radcliffe: Urgent Care for Bury & Greater Manchester",
+  description: "Need an emergency dentist in Radcliffe or Bury? Our clinic offers rapid, compassionate care for all dental emergencies. Learn about our services and how to get seen today.",
+  author: "Dr. Chloe Davis",
+  readTime: "6 min read",
+  category: "Local Services",
+  imgSrc: "https://images.unsplash.com/photo-1599747162468-e134f799b7c3",
+  imgAlt: "A welcoming, typical street in a UK town, representing our local service to Radcliffe and Bury.",
+};
+
+const faqs = [
+    { question: "Are you located directly in Radcliffe?", answer: "Our emergency dental services are strategically positioned to serve the entire Greater Manchester area, including Radcliffe and Bury. When you call, we will direct you to the most convenient clinic with the soonest availability to ensure you get rapid care." },
+    { question: "Do I need to be a registered patient to get an emergency appointment?", answer: "No, not at all. We welcome all patients, registered or not, who are experiencing a dental emergency. Our priority is to get you out of pain and address your urgent dental needs." },
+    { question: "What kind of emergencies do you treat for Radcliffe and Bury residents?", answer: "We treat all types of dental emergencies, including severe toothache, dental abscesses, broken or chipped teeth, lost fillings or crowns, wisdom tooth pain, and trauma from accidents." },
+    { question: "How quickly can I be seen?", answer: "We reserve appointments every day for emergencies, so we aim to see you on the very same day you call. The best way to secure a slot is to call our emergency line as early as possible." },
+    { question: "Is there parking available at your clinic?", answer: "Yes, we ensure our clinic locations have accessible parking to make your visit as stress-free as possible, especially when you're in pain." },
+    { question: "What are your opening hours for emergencies?", answer: "Our clinic has standard opening hours, but our emergency phone line is monitored 24/7. We provide out-of-hours care by appointment for genuine, severe emergencies." },
+    { question: "How do I pay for emergency treatment?", answer: "We are a private emergency service. Payment is due at the time of treatment. We accept major credit/debit cards. We will provide a full breakdown of costs before any treatment begins." },
+    { question: "I'm extremely nervous. Can you help?", answer: "Absolutely. We specialize in treating anxious patients. Please let us know how you're feeling when you call. We offer sedation options and a compassionate approach to ensure your comfort." },
+    { question: "Do you offer services for children's emergencies?", answer: "Yes, we provide emergency dental care for the whole family, including children. Our team is experienced in handling pediatric dental emergencies with a gentle and reassuring touch." },
+    { question: "What makes you different from other dentists in the Radcliffe/Bury area?", answer: "Our specific focus on emergency and urgent care means our systems are built for speed and efficiency. We are equipped to handle complex dental emergencies promptly, which may not be possible at a general practice focused on routine appointments." }
+];
+
+const RadcliffeDentistPost = () => {
+  return (
+    <motion.article initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
+      <Helmet>
+        <title>{post.title}</title>
+        <meta name="description" content={post.description} />
+      </Helmet>
+      
+      <header>
+        <span className="text-brand-red font-semibold">{post.category}</span>
+        <h1>{post.title}</h1>
+        <div className="blog-meta">
+          <div><User className="w-5 h-5" /><span>{post.author}</span></div>
+          <div><Clock className="w-5 h-5" /><span>{post.readTime}</span></div>
+        </div>
+      </header>
+      
+      <p className="lead">When a dental emergency strikes in Radcliffe, Bury, or the surrounding areas, you need fast, reliable, and expert care. Finding a dentist who can see you immediately can be stressful. Our clinic is dedicated to providing that urgent care, ensuring you're not left waiting in pain.</p>
+      
+      <img  src={post.imgSrc} alt={post.imgAlt} src="https://images.unsplash.com/photo-1679136287096-cb864ebf9b10" />
+
+      <h2>Your Local Emergency Dental Hub</h2>
+      <p>We understand the needs of our local communities. Whether you're in Radcliffe town centre, near the River Irwell, or in the heart of Bury, access to immediate dental care is crucial. Our service is designed to be that accessible hub for all of Greater Manchester.</p>
+
+      <blockquote>We are committed to serving the Radcliffe and Bury communities with a dedicated 24/7 emergency dental service. Your pain is our priority.</blockquote>
+      
+      <h2>Services We Provide for Urgent Cases</h2>
+      <p>Our experienced team is equipped to handle a comprehensive range of dental emergencies on the same day you call. This includes:</p>
+      <ul>
+        <li><strong>Severe Tooth Pain:</strong> We diagnose the cause and provide immediate relief.</li>
+        <li><strong>Dental Abscesses:</strong> Prompt treatment to drain the infection and prevent it from spreading.</li>
+        <li><strong>Broken & Chipped Teeth:</strong> From cosmetic bonding to temporary crowns, we restore your tooth's function and appearance.</li>
+        <li><strong>Lost Restorations:</strong> We can replace lost fillings and re-cement crowns to protect your tooth.</li>
+        <li><strong>Wisdom Tooth Pain:</strong> Assessment and management of painful, impacted, or infected wisdom teeth.</li>
+      </ul>
+
+      <h2>Why Choose Us When You're in Radcliffe or Bury?</h2>
+      <ol>
+        <li><strong>Speed:</strong> Our booking system is optimized for emergencies. We will get you an appointment time over the phone and see you as soon as possible.</li>
+        <li><strong>Expertise:</strong> Our dentists have extensive experience in all aspects of emergency dental medicine.</li>
+        <li><strong>Compassion:</strong> We know you're in pain and likely anxious. We provide a calm, reassuring environment and offer sedation for nervous patients.</li>
+        <li><strong>Accessibility:</strong> We serve the entire M26 and BL9 postcodes and beyond, making us a convenient choice for anyone in the region.</li>
+      </ol>
+      
+      <p>Don't let a dental emergency ruin your day. If you're a resident of Radcliffe, Bury, or anywhere in North Manchester and need urgent dental care, call our emergency line now. We are here to help, 24/7.</p>
+
+      <FaqAccordion faqs={faqs} />
+    </motion.article>
+  );
+};
+
+export default RadcliffeDentistPost;
