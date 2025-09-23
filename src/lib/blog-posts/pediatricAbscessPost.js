@@ -8,7 +8,7 @@ export const pediatricAbscessPost = {
   author: "Dr. Chloe Davis",
   category: "Pediatric Care",
   icon: ShieldAlert,
-  imgSrc: "https://images.unsplash.com/photo-1579203333331-a8314e363892",
+  imgSrc: "./images/image33.webp",
   imageDescription: "A compassionate dentist gently examining a worried child's mouth.",
   internalLink: "/contact",
   internalLinkText: "Pediatric Emergency Help",

@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Chloe Davis",
   readTime: "6 min read",
   category: "Patient Guide",
-  imgSrc: "https://images.unsplash.com/photo-1588776814546-1ff20a3a7b8b",
+  imgSrc: "/images/image7.webp",
   imgAlt: "A dentist explaining a procedure to a patient in a calm, professional setting.",
 };
 
@@ -46,7 +46,7 @@ const BuryEmergencyVisitPost = () => {
       
       <p className="lead">A dental emergency can be a frightening experience, especially when you're in pain and unsure where to turn. For residents of Bury, knowing what to expect from an emergency dentist visit can help alleviate anxiety and ensure you receive prompt, effective care. Our goal is to make your experience as smooth and stress-free as possible.</p>
       
-      <img  src={post.imgSrc} alt={post.imgAlt} src="https://images.unsplash.com/photo-1681939278218-a755fb2bf2d3" />
+      <img  src={post.imgSrc} alt={post.imgAlt} />
 
       <h2>Your First Step: The Phone Call</h2>
       <p>When a dental emergency strikes, your first action should always be to call our dedicated emergency line. This is crucial because:</p>

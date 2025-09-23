@@ -8,7 +8,7 @@ export const fixLostFillingPost = {
   author: "Dr. Chloe Davis",
   category: "First Aid",
   icon: HelpCircle,
-  imgSrc: "https://images.unsplash.com/photo-1594394213447-a7c7b5241a8a",
+  imgSrc: "./images/image23.webp",
   imageDescription: "A person looking into a mirror at their teeth, concerned about a lost filling.",
   internalLink: "/services",
   internalLinkText: "Lost Tooth or Filling",

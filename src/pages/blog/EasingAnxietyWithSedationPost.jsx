@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Chloe Davis",
   readTime: "8 min read",
   category: "Sedation Dentistry",
-  imgSrc: "https://images.unsplash.com/photo-1588776814546-da630a076da6",
+  imgSrc: "/images/image16.webp",
   imgAlt: "A compassionate dentist reassuring a relaxed patient in a dental chair.",
 };
 
@@ -44,7 +44,7 @@ const EasingAnxietyWithSedationPost = () => {
       
       <p className="lead">A sudden toothache, a broken tooth, or a dental abscess is a high-stress situation for anyone. But for someone with dental anxiety, it can feel like an impossible nightmare. The fear can be so paralyzing that it prevents you from seeking the urgent care you desperately need. We're here to tell you there's a solution: sedation dentistry for emergencies.</p>
       
-      <img src={post.imgSrc} alt={post.imgAlt} />
+      <img src={post.imgSrc} alt={post.imgAlt} className="w-full h-auto" />
 
       <h2>Breaking the Cycle of Fear and Pain</h2>
       <p>Dental anxiety often creates a vicious cycle. Fear leads to avoiding the dentist, which allows small problems to become big emergencies. When an emergency finally forces a visit, the experience can reinforce the original fear. As a leading sedation dentist in Manchester, our primary goal is to break this cycle.</p>

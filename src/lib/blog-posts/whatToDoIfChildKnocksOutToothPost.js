@@ -8,7 +8,7 @@ export const whatToDoIfChildKnocksOutToothPost = {
   author: "Dr. Chloe Davis",
   category: "Pediatric Care",
   icon: HeartHandshake,
-  imgSrc: "https://images.unsplash.com/photo-1594495894542-a46cc73e081a",
+  imgSrc: "./images/image48.jpg",
   imageDescription: "A parent gently comforting their child, representing care during an emergency.",
   internalLink: "/contact",
   internalLinkText: "Contact Pediatric Emergency Dentist",

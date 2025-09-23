@@ -8,7 +8,7 @@ export const sportsMouthguardsForKidsPost = {
   author: "Dr. Anya Sharma",
   category: "Prevention",
   icon: ShieldCheck,
-  imgSrc: "https://images.unsplash.com/photo-1579952516518-6c2027a0a135",
+  imgSrc: "./images/image40.jpg",
   imageDescription: "A child wearing a sports mouthguard while playing football, showcasing dental protection in action.",
   internalLink: "/contact",
   internalLinkText: "Get a Custom Mouthguard",

@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Chloe Davis",
   readTime: "8 min read",
   category: "Aesthetic Dentistry",
-  imgSrc: "https://images.unsplash.com/photo-1606814893907-c2a0b1b1c345",
+  imgSrc: "/images/image9.png",
   imgAlt: "A person with a beautiful, confident smile, showcasing well-repaired front teeth.",
 };
 
@@ -46,7 +46,7 @@ const DamagedFrontTeethSolutionsPost = () => {
       
       <p className="lead">There are few dental emergencies more distressing than damaging a front tooth. A chip, crack, or fracture in your smile line can immediately impact your confidence and ability to interact with others. At our Greater Manchester clinic, we specialize in providing rapid and beautiful emergency solutions to restore your smile, often in a single visit.</p>
       
-      <img src={post.imgSrc} alt={post.imgAlt} />
+      <img src={post.imgSrc} alt={post.imgAlt} className="w-full h-auto" />
 
       <h2>Solution 1: Dental Bonding - The Quick Fix for Chips</h2>
       <p>For small to medium-sized chips, dental bonding is the hero of emergency cosmetic dentistry. It's a fast, painless, and cost-effective procedure that delivers fantastic results in one appointment.</p>

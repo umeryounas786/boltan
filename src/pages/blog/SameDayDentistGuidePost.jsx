@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Ben Carter",
   readTime: "9 min read",
   category: "Appointments",
-  imgSrc: "https://images.unsplash.com/photo-1629909613638-0e4a1fad8f81",
+  imgSrc: "/images/image38.jpg",
   imgAlt: "A friendly dentist consulting with a patient, representing a successful same-day appointment.",
 };
 

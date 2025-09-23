@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Ben Carter",
   readTime: "9 min read",
   category: "Treatments",
-  imgSrc: "https://images.unsplash.com/photo-1591123720169-2602f65b9a1a",
+  imgSrc: "/images/image20.webp",
   imgAlt: "A high-tech dental microscope used for precision endodontic treatments like root canals.",
 };
 
@@ -46,7 +46,7 @@ const RootCanalPost = () => {
       
       <p className="lead">Few phrases in dentistry cause as much unnecessary fear as "root canal." Thanks to outdated stories and myths, many people associate it with pain. The reality is the exact opposite: a root canal is a pain-relieving procedure that saves a tooth from extraction. Let's demystify what happens during an emergency root canal at our Bolton clinic.</p>
       
-      <img  src={post.imgSrc} alt={post.imgAlt} src="https://images.unsplash.com/photo-1664530837840-07497f9fe437" />
+      <img  src={post.imgSrc} alt={post.imgAlt} />
 
       <h2>Why Would You Need a Root Canal in an Emergency?</h2>
       <p>A root canal is needed when the pulp—the living tissue inside your tooth—becomes infected or inflamed. In an emergency, this usually presents as a severe, persistent, throbbing toothache, extreme sensitivity to hot or cold, swelling of the gum or face, or a pimple-like bump on the gum near the tooth. The goal of the emergency visit is simple: to relieve this intense pain.</p>

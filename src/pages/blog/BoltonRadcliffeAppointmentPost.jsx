@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Ben Carter",
   readTime: "7 min read",
   category: "Appointments",
-  imgSrc: "https://images.unsplash.com/photo-1551189023-e4a73373a623",
+  imgSrc: "/images/image3.avif",
   imgAlt: "A calendar with a specific day circled, signifying an urgent appointment.",
 };
 
@@ -46,7 +46,7 @@ const BoltonRadcliffeAppointmentPost = () => {
       
       <p className="lead">When a sudden toothache strikes, a broken tooth occurs, or an infection flares up, waiting days or weeks for an appointment simply isn't an option. For residents of Bolton and Radcliffe, getting immediate dental care is crucial. We understand the urgency of dental emergencies and are committed to providing same-day appointments to get you out of pain and back to comfort.</p>
       
-      <img  src={post.imgSrc} alt={post.imgAlt} src="https://images.unsplash.com/photo-1641386337567-c824f91bea87" />
+      <img  src={post.imgSrc} alt={post.imgAlt} />
 
       <h2>Our Commitment to Immediate Care</h2>
       <p>We specifically allocate time in our daily schedule for emergency patients. This means that when you call with a genuine dental emergency, we are prepared to see you quickly. Our focus is on providing rapid diagnosis and effective treatment to alleviate your discomfort and prevent further complications.</p>

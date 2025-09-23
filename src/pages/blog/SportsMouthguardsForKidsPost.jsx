@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Anya Sharma",
   readTime: "7 min read",
   category: "Prevention",
-  imgSrc: "https://images.unsplash.com/photo-1579952516518-6c2027a0a135",
+  imgSrc: "/images/image40.jpg",
   imgAlt: "A child wearing a sports mouthguard while playing football, showcasing dental protection in action.",
 };
 
@@ -46,7 +46,7 @@ const SportsMouthguardsForKidsPost = () => {
       
       <p className="lead">As parents, we do everything we can to keep our children safe. We insist on helmets for cycling and shin pads for football. Yet, one of the most vital pieces of protective gear is often overlooked: the mouthguard. Preventing a dental emergency is always better than treating one, and a mouthguard is your first line of defense.</p>
       
-      <img src={post.imgSrc} alt={post.imgAlt} />
+      <img src={post.imgSrc} alt={post.imgAlt} className="w-full h-auto" />
 
       <h2>The Shocking Statistics on Sports Dental Injuries</h2>
       <p>Dental injuries are the most common type of facial injury in sports. It's estimated that athletes who do not wear mouthguards are 60 times more likely to suffer a dental injury. A single blow can lead to a lifetime of dental work, including root canals, crowns, and implants—all of which are far more costly and traumatic than a simple, preventative mouthguard.</p>

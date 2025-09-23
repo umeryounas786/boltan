@@ -8,7 +8,7 @@ export const rootCanalEmergencyPost = {
   author: "Dr. Chloe Davis",
   category: "Treatments",
   icon: ShieldCheck,
-  imgSrc: "https://images.unsplash.com/photo-1591123720169-2602f65b9a1a",
+  imgSrc: "./images/image36.png",
   imageDescription: "Close-up of a dental X-ray showing tooth roots and surrounding bone.",
   internalLink: "/services",
   internalLinkText: "Root Canal Services",

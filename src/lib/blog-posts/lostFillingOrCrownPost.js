@@ -8,7 +8,7 @@ export const lostFillingOrCrownPost = {
   author: "Dr. Anya Sharma",
   category: "Restorations",
   icon: ShieldAlert,
-  imgSrc: "https://images.unsplash.com/photo-1594394213447-a7c7b5241a8a",
+  imgSrc: "./images/image29.webp",
   imageDescription: "A person looking at their smile in a mirror with a concerned expression.",
   internalLink: "/services",
   internalLinkText: "View Restoration Services",

@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Ben Carter",
   readTime: "8 min read",
   category: "Treatments",
-  imgSrc: "https://images.unsplash.com/photo-1629904853716-f0bc54eea48d",
+  imgSrc: "/images/image18.avif",
   imgAlt: "A calm and modern dental clinic room prepared for a procedure.",
 };
 
@@ -46,7 +46,7 @@ const EmergencyExtractionPost = () => {
       
       <p className="lead">Hearing that you need a tooth extracted can be intimidating, especially during a stressful emergency. However, modern dentistry has made tooth extraction a comfortable, pain-free, and routine procedure. Understanding the process can help alleviate any anxiety and prepare you for a smooth experience at our Bolton clinic.</p>
       
-      <img  src={post.imgSrc} alt={post.imgAlt} src="https://images.unsplash.com/photo-1629909613638-0e4a1fad8f81" />
+      <img  src={post.imgSrc} alt={post.imgAlt} />
 
       <h2>When is an Emergency Extraction Necessary?</h2>
       <p>As dentists, our primary goal is always to save your natural teeth. An extraction is only recommended when a tooth is beyond repair. The most common reasons for an emergency extraction include:</p>

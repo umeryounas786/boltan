@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Ben Carter",
   readTime: "9 min read",
   category: "Wisdom Teeth",
-  imgSrc: "https://images.unsplash.com/photo-1629904853716-f0bc54eea48d",
+  imgSrc: "/images/image21.webp",
   imgAlt: "A dental surgeon's hands in gloves, performing a procedure with instruments, signifying urgent dental care.",
 };
 
@@ -48,7 +48,7 @@ const EmergencyWisdomToothRemovalPost = () => {
       
       <p className="lead">Wisdom teeth, or third molars, often arrive with a painful welcome. While some erupt without issue, others become a source of significant discomfort and even serious infection, demanding immediate professional attention. Understanding when a wisdom tooth pain emergency dentist Manchester visit is critical can prevent severe complications.</p>
       
-      <img src={post.imgSrc} alt={post.imgAlt} />
+      <img className="w-full h-auto" src={post.imgSrc} alt={post.imgAlt} />
 
       <h2>When Wisdom Tooth Pain Becomes a True Emergency</h2>
       <p>Not all wisdom tooth discomfort warrants an emergency visit. However, if your pain is accompanied by any of the following, it’s a red flag that immediate attention is needed:</p>

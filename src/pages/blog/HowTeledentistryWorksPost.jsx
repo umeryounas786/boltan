@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Ben Carter",
   readTime: "8 min read",
   category: "Virtual Care",
-  imgSrc: "https://images.unsplash.com/photo-1554734867-bf3c00a49371",
+  imgSrc: "/images/image26.webp",
   imgAlt: "A person smiling while on a video call on their laptop, showing the ease of teledentistry.",
 };
 
@@ -44,7 +44,7 @@ const HowTeledentistryWorksPost = () => {
       
       <p className="lead">When a dental emergency hits, the last thing you want is confusion. Teledentistry offers a refreshingly simple, fast, and modern solution. If you're wondering how a video call dentist emergency consultation works, this guide breaks down our straightforward process for patients across Manchester.</p>
       
-      <img src={post.imgSrc} alt={post.imgAlt} />
+      <img src={post.imgSrc} alt={post.imgAlt} className="w-full h-auto" />
 
       <h2>Step 1: Booking Your Virtual Slot</h2>
       <p>Getting started is easy. You can either call our dedicated emergency line or use our online booking portal. Request a "virtual consultation" or "teledentistry appointment." Our reception team will find the earliest available time, collect your basic details, and explain the next steps. We prioritize these calls to ensure you get advice quickly.</p>

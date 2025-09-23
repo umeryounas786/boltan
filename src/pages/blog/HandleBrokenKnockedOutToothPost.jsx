@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Ben Carter",
   readTime: "8 min read",
   category: "First Aid",
-  imgSrc: "https://images.unsplash.com/photo-1629904853716-f0bc54eea48d",
+  imgSrc: "/images/image25.webp",
   imgAlt: "A person carefully holding a knocked out tooth, ready for transport to the dentist.",
 };
 
@@ -46,7 +46,7 @@ const HandleBrokenKnockedOutToothPost = () => {
       
       <p className="lead">In the shocking moments after a tooth is broken or completely knocked out, your actions can mean the difference between saving and losing the tooth. This guide provides clear, step-by-step instructions for what to do before you get to our clinic for emergency broken tooth repair in Manchester.</p>
       
-      <img src={post.imgSrc} alt={post.imgAlt} />
+      <img src={post.imgSrc} alt={post.imgAlt} className="w-full h-auto" />
 
       <h2>Case 1: A Knocked-Out (Avulsed) Tooth - TIME IS CRITICAL</h2>
       <p>If an adult tooth is completely knocked out of its socket, this is one of the most time-sensitive dental emergencies. Your goal is to get professional knocked out tooth treatment in Manchester within one hour.</p>

@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Anya Sharma",
   readTime: "7 min read",
   category: "Virtual Care",
-  imgSrc: "https://images.unsplash.com/photo-1553877522-5324b31ca7c2",
+  imgSrc: "/images/image46.webp",
   imgAlt: "A person having a professional video consultation on their laptop.",
 };
 
@@ -46,7 +46,7 @@ const VirtualConsultationPost = () => {
       
       <p className="lead">In the digital age, healthcare is evolving. When a dental emergency strikes, you no longer have to wait in uncertainty. Our virtual emergency dental consultation service brings expert advice and triage directly to you, wherever you are in Manchester or Bolton, through the convenience of teledentistry.</p>
       
-      <img  src={post.imgSrc} alt={post.imgAlt} src="https://images.unsplash.com/photo-1679136287096-cb864ebf9b10" />
+      <img  src={post.imgSrc} alt={post.imgAlt} />
 
       <h2>Teledentistry: Your First Line of Defense in a Dental Emergency</h2>
       <p>Teledentistry uses secure video conferencing to connect you face-to-face with one of our emergency dentists. This powerful tool allows for a rapid and accurate assessment of your situation, providing immediate peace of mind and a clear plan of action.</p>

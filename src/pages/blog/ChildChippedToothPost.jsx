@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Chloe Davis",
   readTime: "7 min read",
   category: "Pediatric Care",
-  imgSrc: "https://images.unsplash.com/photo-1546521593-528e06254146",
+  imgSrc: "/images/image8.avif",
   imgAlt: "A happy, smiling child pointing to their healthy teeth.",
 };
 
@@ -46,7 +46,7 @@ const ChildChippedToothPost = () => {
       
       <p className="lead">The sound of a fall on the playground followed by tears is a moment every parent dreads. Discovering your child has chipped a tooth can be alarming, but knowing the right steps to take can make the situation much less stressful for both of you. Here’s your guide to handling this common pediatric dental emergency.</p>
       
-      <img  src={post.imgSrc} alt={post.imgAlt} src="https://images.unsplash.com/photo-1679136287096-cb864ebf9b10" />
+      <img  src={post.imgSrc} alt={post.imgAlt} />
 
       <h2>Immediate First Aid: Your Calm Response is Key</h2>
       <p>Your child will look to you for reassurance. By staying calm and acting decisively, you can provide immediate comfort and take the necessary steps to protect their smile.</p>

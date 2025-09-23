@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Anya Sharma",
   readTime: "7 min read",
   category: "Pain Management",
-  imgSrc: "https://images.unsplash.com/photo-1619451439344-a0c4a8993c47",
+  imgSrc: "/images/image31.jpg",
   imgAlt: "A person applying a cold compress to their cheek for pain relief.",
 };
 
@@ -46,7 +46,7 @@ const ManageWisdomToothPainPost = () => {
       
       <p className="lead">Wisdom tooth pain can strike suddenly and intensely, turning everyday activities into a challenge. While these tips are not a substitute for professional dental care, they can provide much-needed severe wisdom tooth pain relief and help you manage until you can see an emergency dentist in Manchester for definitive treatment.</p>
       
-      <img src={post.imgSrc} alt={post.imgAlt} />
+      <img src={post.imgSrc} alt={post.imgAlt} className="w-full h-auto" />
 
       <h2>Immediate At-Home Remedies for Temporary Relief</h2>
       <p>These methods focus on reducing inflammation, cleaning the area, and temporarily easing the discomfort:</p>

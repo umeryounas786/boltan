@@ -8,7 +8,7 @@ export const whatToDoSevereToothachePost = {
   author: "Dr. Anya Sharma",
   category: "First Aid",
   icon: AidKits,
-  imgSrc: "https://images.unsplash.com/photo-1579621970795-87facc2f976d",
+  imgSrc: "./images/image49.jpg",
   imageDescription: "A person holding their jaw in pain, symbolizing severe toothache.",
   internalLink: "/contact",
   internalLinkText: "Contact Us for Immediate Relief",

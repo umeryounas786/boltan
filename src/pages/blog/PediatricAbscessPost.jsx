@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Chloe Davis",
   readTime: "8 min read",
   category: "Pediatric Care",
-  imgSrc: "https://images.unsplash.com/photo-1579203333331-a8314e363892",
+  imgSrc: "/images/image33.jpg",
   imgAlt: "A compassionate dentist gently examining a worried child's mouth.",
 };
 
@@ -46,7 +46,7 @@ const PediatricAbscessPost = () => {
       
       <p className="lead">There are few things more worrying for a parent than seeing their child in pain or with a swollen face. These are often hallmark signs of a pediatric dental abscess, a serious infection that requires immediate attention from an emergency dentist. For families in Bolton and Bury, understanding the signs and knowing what to do is critical for your child's health.</p>
       
-      <img  src={post.imgSrc} alt={post.imgAlt} src="https://images.unsplash.com/photo-1679136287096-cb864ebf9b10" />
+      <img  src={post.imgSrc} alt={post.imgAlt} />
 
       <h2>Why an Abscess in a Child is a True Emergency</h2>
       <p>A dental abscess is a pocket of pus caused by bacteria. In children, it typically stems from untreated tooth decay or an injury to a tooth. It is not just a simple toothache; it is a significant infection that can make a child very unwell.</p>

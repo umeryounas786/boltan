@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Ben Carter",
   readTime: "9 min read",
   category: "Infections",
-  imgSrc: "https://images.unsplash.com/photo-1629904853716-f0bc54eea48d",
+  imgSrc: "/images/image10.avif",
   imgAlt: "A close-up of dental tools used for treating infections.",
 };
 
@@ -46,7 +46,7 @@ const DentalAbscessEmergencyTreatmentPost = () => {
       
       <p className="lead">A dental abscess is a terrifying experience. It's more than just a bad toothache—it’s a serious bacterial infection that can have severe, even life-threatening, consequences if ignored. Understanding why it’s a true emergency and how our emergency dental treatment in Manchester can help is crucial for your health.</p>
       
-      <img src={post.imgSrc} alt={post.imgAlt} />
+      <img src={post.imgSrc} alt={post.imgAlt} className="w-full h-auto" />
 
       <h2>What is a Dental Abscess?</h2>
       <p>Imagine a small pocket of pus, filled with bacteria, trapped inside your jawbone at the root of your tooth (periapical abscess) or in the gum tissue (periodontal abscess). This is an abscess. It typically forms due to untreated severe tooth decay, deep cracks, gum disease, or dental trauma that allows bacteria to invade the pulp (nerve and blood vessels) of the tooth or the surrounding tissues.</p>

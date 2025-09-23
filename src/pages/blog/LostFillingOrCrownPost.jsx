@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Anya Sharma",
   readTime: "7 min read",
   category: "Restorations",
-  imgSrc: "https://images.unsplash.com/photo-1594394213447-a7c7b5241a8a",
+  imgSrc: "/images/image29.webp",
   imgAlt: "A person looking at their smile in a mirror with a concerned expression.",
 };
 
@@ -46,7 +46,7 @@ const LostFillingOrCrownPost = () => {
       
       <p className="lead">It often happens unexpectedly while eating—a lost filling or a dislodged crown. You might not feel any pain, leading you to believe it's not a big deal. However, this is a deceptive situation. A lost restoration is a true dental emergency that requires prompt attention to avoid serious consequences.</p>
       
-      <img src={post.imgSrc} alt={post.imgAlt} />
+      <img src={post.imgSrc} alt={post.imgAlt} className="w-full h-auto" />
 
       <h2>Why It's an Emergency: The Tooth is Exposed</h2>
       <p>A filling or crown isn't just cosmetic; it's a protective seal and structural support for a tooth that has already been weakened by decay or trauma. When that protection is gone, the tooth is left vulnerable to a host of new problems:</p>

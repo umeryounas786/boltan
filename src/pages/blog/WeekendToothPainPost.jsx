@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Ben Carter",
   readTime: "7 min read",
   category: "Appointments",
-  imgSrc: "https://images.unsplash.com/photo-1580624403224-9195936a54d2",
+  imgSrc: "/images/image47.jpg",
   imgAlt: "A calendar page showing Saturday and Sunday highlighted, representing weekend availability.",
 };
 
@@ -46,7 +46,7 @@ const WeekendToothPainPost = () => {
       
       <p className="lead">There's nothing worse than a throbbing toothache starting on a Friday night, leaving you to face a long weekend of pain. Many people think they have to suffer through until Monday, but that's not the case. Our emergency dental service in Manchester is available 7 days a week to provide the urgent care you need.</p>
       
-      <img  src={post.imgSrc} alt={post.imgAlt} src="https://images.unsplash.com/photo-1679136287096-cb864ebf9b10" />
+      <img  src={post.imgSrc} alt={post.imgAlt} className='w-full h-auto' />
 
       <h2>Why Waiting Until Monday is a Bad Idea</h2>
       <p>Dental pain is your body's warning signal that something is wrong. Ignoring it can allow the problem to escalate significantly. A simple infection can develop into a painful abscess, and a small crack can lead to a completely fractured tooth. Seeking immediate care is not just about relieving pain; it's about preventing more complex and expensive treatments down the line.</p>

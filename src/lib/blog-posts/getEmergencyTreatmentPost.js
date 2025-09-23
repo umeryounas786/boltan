@@ -8,7 +8,7 @@ export const getEmergencyTreatmentPost = {
   author: "Dr. Chloe Davis",
   category: "Patient Guide",
   icon: ShieldCheck,
-  imgSrc: "https://images.unsplash.com/photo-1580281657527-47f249e8f4df",
+  imgSrc: "./images/image24.jpg",
   imageDescription: "A person confidently walking into a modern dental clinic, ready for their appointment.",
   internalLink: "/contact",
   internalLinkText: "Get Urgent Care Now",

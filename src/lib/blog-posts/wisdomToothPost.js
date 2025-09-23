@@ -8,7 +8,7 @@ export const wisdomToothPost = {
   author: "Dr. Anya Sharma",
   category: "Pain Management",
   icon: Wind,
-  imgSrc: "https://images.unsplash.com/photo-1619451439344-a0c4a8993c47",
+  imgSrc: "./images/image52.webp",
   imageDescription: "A person holding their jaw in discomfort, illustrating the severe pain from a wisdom tooth.",
   internalLink: "/services",
   internalLinkText: "Wisdom Tooth Services",

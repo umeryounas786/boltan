@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Ben Carter",
   readTime: "7 min read",
   category: "Appointments",
-  imgSrc: "https://images.unsplash.com/photo-1551189023-e4a73373a623",
+  imgSrc: "/images/image37.jpg",
   imgAlt: "A calendar with a day circled and marked as 'Urgent', symbolizing a same-day appointment.",
 };
 
@@ -46,7 +46,7 @@ const SameDayAppointmentPost = () => {
       
       <p className="lead">When you're hit with sudden, severe dental pain, the last thing you want to hear is "Our next available appointment is in two weeks." At our clinic serving Manchester and Bolton, we understand that dental emergencies can't wait. That's why we've structured our practice to ensure we can help when you need it most.</p>
       
-      <img  src={post.imgSrc} alt={post.imgAlt} src="https://images.unsplash.com/photo-1679136287096-cb864ebf9b10" />
+      <img  src={post.imgSrc} alt={post.imgAlt} />
 
       <h2>Our Commitment to Emergency Care</h2>
       <p>Getting you out of pain is our top priority. We are not a standard 9-to-5 dental office; we are a dedicated emergency dental service. This means we operate differently to accommodate urgent cases.</p>

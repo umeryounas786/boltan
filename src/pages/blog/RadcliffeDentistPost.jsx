@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Chloe Davis",
   readTime: "6 min read",
   category: "Local Services",
-  imgSrc: "https://images.unsplash.com/photo-1599747162468-e134f799b7c3",
+  imgSrc: "/images/image35.jpg",
   imgAlt: "A welcoming, typical street in a UK town, representing our local service to Radcliffe and Bury.",
 };
 
@@ -46,7 +46,7 @@ const RadcliffeDentistPost = () => {
       
       <p className="lead">When a dental emergency strikes in Radcliffe, Bury, or the surrounding areas, you need fast, reliable, and expert care. Finding a dentist who can see you immediately can be stressful. Our clinic is dedicated to providing that urgent care, ensuring you're not left waiting in pain.</p>
       
-      <img  src={post.imgSrc} alt={post.imgAlt} src="https://images.unsplash.com/photo-1679136287096-cb864ebf9b10" />
+      <img  src={post.imgSrc} alt={post.imgAlt} />
 
       <h2>Your Local Emergency Dental Hub</h2>
       <p>We understand the needs of our local communities. Whether you're in Radcliffe town centre, near the River Irwell, or in the heart of Bury, access to immediate dental care is crucial. Our service is designed to be that accessible hub for all of Greater Manchester.</p>

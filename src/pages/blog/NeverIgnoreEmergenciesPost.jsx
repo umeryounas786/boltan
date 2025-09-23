@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Ben Carter",
   readTime: "8 min read",
   category: "Patient Education",
-  imgSrc: "https://images.unsplash.com/photo-1512484776495-a09d92e87c3b",
+  imgSrc: "/images/image32.jpg",
   imgAlt: "An open book with reading glasses, symbolizing the importance of patient education.",
 };
 
@@ -46,7 +46,7 @@ const NeverIgnoreEmergenciesPost = () => {
       
       <p className="lead">It's easy to dismiss a minor toothache or a little bleeding from your gums, hoping it will just go away. However, some seemingly small dental issues are actually warning signs of much bigger problems. Ignoring them can lead to more pain, more complex treatments, and even tooth loss. Here are five dental emergencies you should never ignore.</p>
       
-      <img  src={post.imgSrc} alt={post.imgAlt} src="https://images.unsplash.com/photo-1679136287096-cb864ebf9b10" />
+      <img  src={post.imgSrc} alt={post.imgAlt} />
 
       <h2>1. A Severe, Persistent Toothache</h2>
       <p>A toothache that is severe, throbbing, and keeps you up at night is not normal. It's a classic sign that the nerve (pulp) inside your tooth is infected or inflamed. This condition, called pulpitis, will not heal on its own and often requires a root canal to save the tooth. Ignoring it will almost certainly lead to a painful dental abscess.</p>

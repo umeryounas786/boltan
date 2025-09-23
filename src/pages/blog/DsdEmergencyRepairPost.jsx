@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Anya Sharma",
   readTime: "6 min read",
   category: "Technology",
-  imgSrc: "https://images.unsplash.com/photo-1588776814546-1ff20a3a7b8b",
+  imgSrc: "/images/image15.avif",
   imgAlt: "A dentist using a tablet to show a patient a digital preview of their repaired smile.",
 };
 
@@ -46,7 +46,7 @@ const DsdEmergencyRepairPost = () => {
       
       <p className="lead">When you chip a front tooth, your emergency isn't just about health—it's about your confidence. The goal isn't just to 'fix' the tooth, but to restore your smile so perfectly that no one would ever know it was damaged. That's why we're excited to announce that we will soon be integrating Digital Smile Design (DSD) technology into our emergency cosmetic repair workflow.</p>
       
-      <img  src={post.imgSrc} alt={post.imgAlt} src="https://images.unsplash.com/photo-1619691249147-c5689d88016b" />
+        <img  src={post.imgSrc} alt={post.imgAlt} />
 
       <h2>Beyond a Simple Patch: The DSD Philosophy</h2>
       <p>Traditionally, repairing a chipped tooth involves the dentist skillfully free-handing the repair with composite material. While effective, Digital Smile Design takes this to a whole new level of precision and artistry. It's a shift from fixing a tooth in isolation to designing a repair that is in perfect harmony with your entire face.</p>

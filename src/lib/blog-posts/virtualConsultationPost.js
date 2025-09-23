@@ -8,7 +8,7 @@ export const virtualConsultationPost = {
   author: "Dr. Anya Sharma",
   category: "Virtual Care",
   icon: Video,
-  imgSrc: "https://images.unsplash.com/photo-1553877522-5324b31ca7c2",
+  imgSrc: "./images/image46.webp",
   imageDescription: "A person having a professional video consultation on their laptop.",
   internalLink: "/contact",
   internalLinkText: "Book a Virtual Consult",

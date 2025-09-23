@@ -8,7 +8,7 @@ export const radcliffeDentistPost = {
   author: "Dr. Chloe Davis",
   category: "Local Services",
   icon: MapPin,
-  imgSrc: "https://images.unsplash.com/photo-1599747162468-e134f799b7c3",
+  imgSrc: "./images/image35.webp",
   imageDescription: "A quiet, welcoming street in a UK town, representing local community care.",
   internalLink: "/contact",
   internalLinkText: "Contact Radcliffe/Bury Services",

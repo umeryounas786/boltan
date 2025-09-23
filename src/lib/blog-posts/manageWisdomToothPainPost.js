@@ -8,7 +8,7 @@ export const manageWisdomToothPainPost = {
   author: "Dr. Anya Sharma",
   category: "Pain Management",
   icon: Smile,
-  imgSrc: "https://images.unsplash.com/photo-1619451439344-a0c4a8993c47",
+  imgSrc: "./images/image31.jpg",
   imageDescription: "A person applying a cold compress to their cheek for pain relief.",
   internalLink: "/contact",
   internalLinkText: "Book Your Consultation",

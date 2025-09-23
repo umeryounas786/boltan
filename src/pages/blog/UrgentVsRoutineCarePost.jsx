@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Chloe Davis",
   readTime: "8 min read",
   category: "Patient Education",
-  imgSrc: "https://images.unsplash.com/photo-1526256262350-7da7584cf5eb",
+  imgSrc: "/images/image45.webp",
   imgAlt: "A split image showing a dental emergency on one side and a routine check-up on the other.",
 };
 
@@ -46,7 +46,7 @@ const UrgentVsRoutineCarePost = () => {
       
       <p className="lead">When a dental problem arises, it can be hard to know how serious it is. Is this a true emergency that needs immediate attention, or is it something that can wait for a regular appointment? Understanding the difference between urgent care and routine visits can help you make the right decision for your health and peace of mind.</p>
       
-      <img  src={post.imgSrc} alt={post.imgAlt} src="https://images.unsplash.com/photo-1679136287096-cb864ebf9b10" />
+      <img  src={post.imgSrc} alt={post.imgAlt} />
 
       <h2>Urgent Dental Care: The Problem-Solvers</h2>
       <p>Think of urgent care as the 'fire department' of dentistry. Its purpose is to deal with an immediate, acute problem. You should seek urgent dental care if you are experiencing:</p>

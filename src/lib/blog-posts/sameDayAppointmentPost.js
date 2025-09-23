@@ -8,7 +8,7 @@ export const sameDayAppointmentPost = {
   author: "Dr. Ben Carter",
   category: "Appointments",
   icon: CalendarCheck,
-  imgSrc: "https://images.unsplash.com/photo-1551189023-e4a73373a623",
+  imgSrc: "./images/image37.webp",
   imageDescription: "A calendar with a specific day circled, signifying an urgent appointment.",
   internalLink: "/contact",
   internalLinkText: "Book an Emergency Appointment",

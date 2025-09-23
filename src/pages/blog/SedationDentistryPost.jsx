@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Anya Sharma",
   readTime: "9 min read",
   category: "Patient Comfort",
-  imgSrc: "https://images.unsplash.com/photo-1629904791657-8a6f3b393568",
+  imgSrc: "/images/image39.jpg",
   imgAlt: "A calm and comfortable patient in a modern, welcoming dental clinic room.",
 };
 
@@ -46,7 +46,7 @@ const SedationDentistryPost = () => {
       
       <p className="lead">Dental anxiety is incredibly common, and it can be especially overwhelming during an emergency. The fear of pain or the stress of an unexpected dental problem can prevent people from seeking the urgent care they need. At our clinic, we believe that your comfort is paramount. That’s why we offer in-clinic sedation options to ensure your visit is as calm, relaxed, and pain-free as possible.</p>
       
-      <img  src={post.imgSrc} alt={post.imgAlt} src="https://images.unsplash.com/photo-1679136287096-cb864ebf9b10" />
+      <img  src={post.imgSrc} alt={post.imgAlt} />
 
       <h2>Understanding Dental Anxiety and How Sedation Helps</h2>
       <p>Dental anxiety can stem from past negative experiences, fear of needles or drills, or a feeling of helplessness. This fear can trigger a physical stress response, making treatment more difficult for both you and the dentist. Sedation dentistry directly addresses this by calming the central nervous system, allowing you to enter a state of deep relaxation while remaining conscious and able to communicate.</p>

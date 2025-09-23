@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Anya Sharma",
   readTime: "8 min read",
   category: "Senior Care",
-  imgSrc: "https://images.unsplash.com/photo-1592890287445-f2410770827f",
+  imgSrc: "/images/image39.webp",
   imgAlt: "A senior patient smiling comfortably in a dental chair, with a caring dentist.",
 };
 
@@ -46,7 +46,7 @@ const SeniorEmergencyCarePost = () => {
       
       <p className="lead">As we age, our dental needs evolve, and sometimes, unexpected emergencies can arise. For seniors, issues like a broken denture, a lost filling, or sudden tooth pain can be particularly distressing and impact daily life significantly. Understanding these common emergencies and knowing where to find gentle, prompt care is essential for maintaining comfort and health.</p>
       
-      <img  src={post.imgSrc} alt={post.imgAlt} src="https://images.unsplash.com/photo-1679136287096-cb864ebf9b10" />
+      <img  src={post.imgSrc} alt={post.imgAlt} />
 
       <h2>Common Dental Emergencies for Seniors</h2>
       <p>While anyone can experience a dental emergency, certain issues are more prevalent among older adults:</p>

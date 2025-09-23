@@ -8,7 +8,7 @@ export const lostFillingPost = {
   author: "Dr. Chloe Davis",
   category: "Dental Repairs",
   icon: ShieldOff,
-  imgSrc: "https://images.unsplash.com/photo-1606636660488-5276535544d3",
+  imgSrc: "./images/image30.jpeg",
   imageDescription: "A dental crown and a dental tool on a tray, ready for a procedure.",
   internalLink: "/services",
   internalLinkText: "View Crown & Filling Services",

@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Anya Sharma",
   readTime: "6 min read",
   category: "Aesthetic Solutions",
-  imgSrc: "https://images.unsplash.com/photo-1629904853716-f0bc54eea48d",
+  imgSrc: "/images/image5.avif",
   imgAlt: "A dentist holding a perfectly crafted dental crown between their fingers.",
 };
 
@@ -46,7 +46,7 @@ const TemporaryCrownPost = () => {
       
       <p className="lead">Breaking a prominent tooth can be a distressing experience, impacting not just your ability to chew but also your confidence. While a permanent crown is the ultimate solution, you need an immediate fix. This is where a same-day temporary crown becomes an essential part of emergency dental care in Manchester.</p>
       
-      <img  src={post.imgSrc} alt={post.imgAlt} src="https://images.unsplash.com/photo-1679136287096-cb864ebf9b10" />
+      <img  src={post.imgSrc} alt={post.imgAlt} />
 
       <h2>The Crucial Role of a Temporary Crown</h2>
       <p>A temporary crown is much more than just a placeholder. It serves several vital functions in a dental emergency:</p>

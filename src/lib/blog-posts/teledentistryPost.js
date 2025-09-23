@@ -8,7 +8,7 @@ export const teledentistryPost = {
   author: "Dr. Ben Carter",
   category: "Virtual Care",
   icon: MonitorSmartphone,
-  imgSrc: "https://images.unsplash.com/photo-1584433144859-1fc3ab64a957",
+  imgSrc: "./images/image41.jpg",
   imageDescription: "A person on a laptop having a video call with their dentist.",
   internalLink: "/contact",
   internalLinkText: "Learn More & Inquire",

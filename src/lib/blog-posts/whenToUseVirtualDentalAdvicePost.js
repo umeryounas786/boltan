@@ -8,7 +8,7 @@ export const whenToUseVirtualDentalAdvicePost = {
   author: "Dr. Anya Sharma",
   category: "Virtual Care",
   icon: MessageSquareShare,
-  imgSrc: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9",
+  imgSrc: "./images/image51.jpg",
   imageDescription: "A person relaxing at home on a couch while using their laptop, symbolizing the convenience of virtual advice.",
   internalLink: "/services",
   internalLinkText: "Explore Our Services",

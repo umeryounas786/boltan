@@ -8,7 +8,7 @@ export const typesOfSedationPost = {
   author: "Dr. Ben Carter",
   category: "Sedation Dentistry",
   icon: ListChecks,
-  imgSrc: "https://images.unsplash.com/photo-1629904791657-8a6f3b393568",
+  imgSrc: "./images/image44.webp",
   imageDescription: "A modern dental operatory with equipment for sedation, including a nitrous oxide mask.",
   internalLink: "/services",
   internalLinkText: "View Our Services",

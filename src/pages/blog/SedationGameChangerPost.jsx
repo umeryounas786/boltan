@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Anya Sharma",
   readTime: "7 min read",
   category: "Patient Experience",
-  imgSrc: "https://images.unsplash.com/photo-1606306296212-59ae37c47533",
+  imgSrc: "/images/image2.avif",
   imgAlt: "A smiling, happy patient leaving a dental clinic, looking relieved and satisfied.",
 };
 
@@ -44,7 +44,7 @@ const SedationGameChangerPost = () => {
       
       <p className="lead">For millions of people, the thought of visiting a dentist is filled with dread. For these nervous patients, sedation dentistry isn't just a minor comfort—it's a revolutionary tool that makes essential dental care possible. It fundamentally changes the entire experience, turning a moment of fear into an opportunity for healing and relief.</p>
       
-      <img src={post.imgSrc} alt={post.imgAlt} />
+      <img src={post.imgSrc} alt={post.imgAlt} className="w-full h-auto" />
 
       <h2>More Than Just Relaxation: The True Impact of Sedation</h2>
       <p>The benefits of sedation go far beyond simply feeling calm. For a nervous patient requiring emergency dental treatment, it creates a cascade of positive effects that can be truly life-changing.</p>

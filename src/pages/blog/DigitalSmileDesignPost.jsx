@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Anya Sharma",
   readTime: "8 min read",
   category: "Cosmetic Dentistry",
-  imgSrc: "https://images.unsplash.com/photo-1588776814546-1ff20a3a7b8b",
+  imgSrc: "/images/image14.avif",
   imgAlt: "Dentist and patient reviewing a new smile design on a tablet screen.",
 };
 
@@ -46,7 +46,7 @@ const DigitalSmileDesignPost = () => {
       
       <p className="lead">Imagine seeing your new, perfect smile before a single dental instrument is picked up. That's not science fiction; it's the reality of Digital Smile Design (DSD), a cutting-edge approach that is transforming cosmetic dentistry and bringing a new level of precision to emergency dental care.</p>
       
-      <img  src={post.imgSrc} alt={post.imgAlt} src="https://images.unsplash.com/photo-1674775372047-27fb6492c9a2" />
+      <img  src={post.imgSrc} alt={post.imgAlt} />
 
       <h2>What is the Magic Behind Digital Smile Design?</h2>
       <p>Digital Smile Design is a treatment planning protocol that uses high-quality digital photography, video, and 3D imaging technology to analyze your dental and facial structures. It allows us, as your dentists, to understand the intricate relationship between your teeth, gums, lips, and overall face in motion. This holistic view enables us to design a smile that is not only beautiful but also fully functional and emotionally expressive.</p>

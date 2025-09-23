@@ -8,7 +8,7 @@ export const weekendToothPainPost = {
   readTime: "7 min read",
   category: "Appointments",
   icon: CalendarClock,
-  imgSrc: "https://images.unsplash.com/photo-1580624403224-9195936a54d2",
+  imgSrc: "./images/image47.jpg",
   imageDescription: "A calendar page showing Saturday and Sunday highlighted, representing weekend availability.",
   internalLink: "/contact",
   internalLinkText: "Emergency Appointments",

@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Chloe Davis",
   readTime: "6 min read",
   category: "Dental Repairs",
-  imgSrc: "https://images.unsplash.com/photo-1606636660488-5276535544d3",
+  imgSrc: "/images/image30.jpeg",
   imgAlt: "A dental crown and professional tools on a sterile tray, ready for a procedure.",
 };
 
@@ -46,7 +46,7 @@ const LostFillingPost = () => {
       
       <p className="lead">You're eating a meal, and suddenly you feel something hard in your food that definitely shouldn't be there. A moment of panic reveals a lost filling or a dislodged crown. This situation can be unsettling, but by taking the right steps, you can protect your tooth and ensure a simple fix.</p>
       
-      <img  src={post.imgSrc} alt={post.imgAlt} src="https://images.unsplash.com/photo-1679136287096-cb864ebf9b10" />
+        <img  src={post.imgSrc} alt={post.imgAlt} />
 
       <h2>Your Immediate Action Plan</h2>
       <p>As soon as you realize a restoration is missing, follow these steps. Your quick response is key to preventing further complications.</p>
