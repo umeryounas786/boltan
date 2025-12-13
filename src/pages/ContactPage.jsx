@@ -55,6 +55,7 @@ export default function ContactPage() {
     message: '',
   });
   const [errors, setErrors] = useState({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -83,7 +84,7 @@ export default function ContactPage() {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!validateForm()) {
       toast({
@@ -94,12 +95,45 @@ export default function ContactPage() {
       return;
     }
     
-    localStorage.setItem('contactFormSubmission', JSON.stringify(formData));
-    toast({
-      title: "Message Sent!",
-      description: "We've received your request and will contact you shortly.",
-    });
-    setFormData({ name: '', phone: '', email: '', service: 'Emergency Consultation', preferredTime: 'Any', message: '' });
+    setIsSubmitting(true);
+    
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to send email');
+      }
+
+      // Save to localStorage as backup
+      localStorage.setItem('contactFormSubmission', JSON.stringify({
+        ...formData,
+        timestamp: new Date().toISOString(),
+      }));
+
+      toast({
+        title: "Message Sent Successfully!",
+        description: "We've received your emergency request and will contact you shortly.",
+      });
+      
+      setFormData({ name: '', phone: '', email: '', service: 'Emergency Consultation', preferredTime: 'Any', message: '' });
+    } catch (error) {
+      console.error('Error sending email:', error);
+      toast({
+        variant: "destructive",
+        title: "Failed to Send Message",
+        description: error.message || "There was an error sending your message. Please try calling us directly or try again later.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactOptions = [
@@ -352,8 +386,12 @@ export default function ContactPage() {
                   />
                   {errors.message && <p className="text-yellow-400 text-xs sm:text-sm mt-1 flex items-center"><AlertTriangle className="w-3.5 h-3.5 sm:w-4 sm:h-4 mr-1" />{errors.message}</p>}
                 </div>
-                <Button type="submit" className="w-full primary-cta text-base sm:text-lg !py-2.5 sm:!py-3 pulse-animation mt-auto">
-                  Send Emergency Request
+                <Button 
+                  type="submit" 
+                  className="w-full primary-cta text-base sm:text-lg !py-2.5 sm:!py-3 pulse-animation mt-auto"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? 'Sending...' : 'Send Emergency Request'}
                 </Button>
               </form>
               <p className="text-xs text-brand-gray-medium mt-5 sm:mt-6 text-center opacity-80">
