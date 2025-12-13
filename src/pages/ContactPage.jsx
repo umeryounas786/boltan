@@ -131,8 +131,8 @@ export default function ContactPage() {
     { 
       icon: <Mail className="w-7 h-7" />, 
       title: "Email Us", 
-      value: "emergency@dental.manchesterbolton.co.uk", 
-      action: "mailto:emergency@dental.manchesterbolton.co.uk",
+      value: "emergency@urgentdentalcare.co.uk", 
+      action: "mailto:emergency@urgentdentalcare.co.uk",
       cta: "Send Email",
       color: "purple"
     },
