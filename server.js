@@ -8,8 +8,14 @@ const app = express();
 const PORT = 3001;
 
 // Initialize Stripe - use environment variable or fallback to provided key
-const stripeSecretKey = process.env.STRIPE_SECRET_KEY || "";
+// Initialize Stripe - require environment variable
+const stripeSecretKey = process.env.STRIPE_SECRET_KEY;
 
+if (!stripeSecretKey) {
+  console.error('❌ ERROR: STRIPE_SECRET_KEY environment variable is required');
+  console.error('Please set STRIPE_SECRET_KEY in your .env file or environment variables');
+  process.exit(1);
+}
 // Log key status (first 20 chars only for security)
 console.log('🔑 Stripe Key Status:', stripeSecretKey ? `Loaded (${stripeSecretKey.substring(0, 20)}...)` : 'NOT SET');
 console.log('🔑 Key Type:', stripeSecretKey.startsWith('sk_live_') ? 'LIVE' : stripeSecretKey.startsWith('sk_test_') ? 'TEST' : 'UNKNOWN');
