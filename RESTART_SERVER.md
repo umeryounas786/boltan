@@ -39,10 +39,7 @@ The code has been updated with your live Stripe keys, but the server needs to be
 
 ## If Still Not Working
 
-1. **Check if .env file exists** and has the correct key:
-   ```env
-   STRIPE_SECRET_KEY=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
-   ```
+
 
 2. **Verify the key in server.js** - Line 11 should have your live key as fallback
 
