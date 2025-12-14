@@ -8,7 +8,7 @@ const app = express();
 const PORT = 3001;
 
 // Initialize Stripe - use environment variable or fallback to provided key
-const stripeSecretKey = process.env.STRIPE_SECRET_KEY || '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';
+const stripeSecretKey = process.env.STRIPE_SECRET_KEY || "";
 
 // Log key status (first 20 chars only for security)
 console.log('🔑 Stripe Key Status:', stripeSecretKey ? `Loaded (${stripeSecretKey.substring(0, 20)}...)` : 'NOT SET');
