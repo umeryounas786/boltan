@@ -22,7 +22,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import FaqAccordion from '@/components/FaqAccordion';
 
 // Initialize Stripe - use environment variable or fallback to provided key
-const STRIPE_PUBLISHABLE_KEY = import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY || 'pk_live_51SDEBkDsoYoQhpIXaeKiU5OKE1cjmt3SsZMKzU3v3J4QBoUQ200exRfwwH5LlczsM83cN9aZwjCRuhkaS1eK1Q1O00QexX6beU';
+const STRIPE_PUBLISHABLE_KEY = import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY;
 
 // Validate and log Stripe key
 if (!STRIPE_PUBLISHABLE_KEY || STRIPE_PUBLISHABLE_KEY.includes('YOUR_STRIPE')) {
