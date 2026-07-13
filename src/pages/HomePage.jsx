@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/use-toast';
 import { Link } from 'react-router-dom';
+import Seo from '@/components/Seo';
+import { SITE_URL, SITE_NAME, organizationSchema } from '@/lib/siteConfig';
 import { FeaturedServices } from '@/components/FeaturedServices';
 import { PricingSection } from '@/components/PricingSection';
 import { BlogPreview } from '@/components/BlogPreview';
@@ -50,8 +52,28 @@ export default function HomePage() {
   ];
   
 
+  const homeSchema = [
+    organizationSchema,
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": `${SITE_URL}/#website`,
+      url: SITE_URL,
+      name: SITE_NAME,
+      publisher: { "@id": `${SITE_URL}/#organization` },
+    },
+  ];
+
   return (
     <>
+      <Seo
+        title="24/7 Emergency Dentist in Manchester & Bolton | Same-Day Appointments"
+        description="Urgent dental care in Manchester, Bolton, Bury & Radcliffe. Same-day emergency appointments, 24/7 phone triage, and expert GDC-registered dentists. Call now for immediate relief."
+        path="/"
+        type="website"
+        keywords={["emergency dentist Manchester", "emergency dentist Bolton", "same-day dentist", "24/7 dental care", "urgent dental treatment"]}
+        schema={homeSchema}
+      />
       <style>
         {`
           body.light-theme-active #homepageBlogPreviewWrapper section#blog-preview-homepage p.section-description {

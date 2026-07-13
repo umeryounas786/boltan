@@ -5,6 +5,8 @@ import { FeaturedServices } from '@/components/FeaturedServices';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { Phone, MessageCircle, AlertCircle, Calendar, Info, CheckSquare, HelpCircle } from 'lucide-react';
+import Seo from '@/components/Seo';
+import { organizationSchema } from '@/lib/siteConfig';
 
 const EMERGENCY_NUMBER = "07375064619";
 
@@ -37,6 +39,13 @@ export default function ServicesPage() {
 
   return (
     <div className="py-20 lg:py-28 page-background-light">
+      <Seo
+        title="Emergency Dental Services in Manchester & Bolton"
+        description="Explore our full range of emergency dental services: severe toothache relief, broken tooth repair, dental abscess treatment, extractions, lost fillings & crowns, and sedation for anxious patients."
+        path="/services"
+        keywords={["emergency dental services", "toothache treatment Manchester", "broken tooth repair", "dental abscess treatment", "emergency tooth extraction"]}
+        schema={organizationSchema}
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ y: -30, opacity: 0 }}

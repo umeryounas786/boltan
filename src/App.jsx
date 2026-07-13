@@ -11,6 +11,7 @@ const ServicesPage = React.lazy(() => import('@/pages/ServicesPage'));
 const BlogPage = React.lazy(() => import('@/pages/BlogPage'));
 const PricingPage = React.lazy(() => import('@/pages/PricingPage'));
 const BookingPage = React.lazy(() => import('@/pages/BookingPage'));
+const BookingSuccessPage = React.lazy(() => import('@/pages/BookingSuccessPage'));
 const BlogPostLayout = React.lazy(() => import('@/components/BlogPostLayout'));
 
 // Existing Blog Posts
@@ -104,6 +105,7 @@ function App() {
             <Route path="pricing" element={<PricingPage />} />
             <Route path="contact" element={<ContactPage />} />
             <Route path="book-appointment" element={<BookingPage />} />
+            <Route path="booking-success" element={<BookingSuccessPage />} />
             
             <Route path="blog" element={<BlogPage />} />
             <Route path="blog/digital-smile-design" element={<BlogPostLayout><DigitalSmileDesignPost /></BlogPostLayout>} />

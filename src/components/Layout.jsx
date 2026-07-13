@@ -201,7 +201,7 @@ export function Layout() {
                   <Clock className="w-5 h-5 text-blue-500 transition-colors" />
                   <span>{OFFICE_NUMBER} (Office Hours)</span>
                 </a>
-                <a href="mailto:emergency@dental.manchesterbolton.co.uk" className="flex items-center space-x-3 text-brand-gray-medium hover:text-blue-500 transition-colors group">
+                <a href="mailto:emergency@urgentdentalcare.co.uk" className="flex items-center space-x-3 text-brand-gray-medium hover:text-blue-500 transition-colors group">
                   <Mail className="w-5 h-5 text-blue-500 transition-colors" />
                   <span>Email Us</span>
                 </a>

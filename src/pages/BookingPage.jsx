@@ -18,10 +18,20 @@ import {
   ChevronRight
 } from 'lucide-react';
 import { loadStripe } from '@stripe/stripe-js';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import FaqAccordion from '@/components/FaqAccordion';
 
-const stripePromise = loadStripe('YOUR_STRIPE_PUBLISHABLE_KEY');
+// Initialize Stripe - use environment variable or fallback to provided key
+const STRIPE_PUBLISHABLE_KEY = import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY;
+
+// Validate and log Stripe key
+if (!STRIPE_PUBLISHABLE_KEY || STRIPE_PUBLISHABLE_KEY.includes('YOUR_STRIPE')) {
+  console.error('❌ Invalid Stripe publishable key!');
+} else {
+  console.log('✅ Stripe publishable key loaded:', STRIPE_PUBLISHABLE_KEY.substring(0, 20) + '...');
+}
+
+const stripePromise = loadStripe(STRIPE_PUBLISHABLE_KEY);
 
 const bookingBenefits = [
   {
@@ -74,6 +84,7 @@ const bookingFAQs = [
 
 export default function BookingPage() {
   const { toast } = useToast();
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -83,6 +94,7 @@ export default function BookingPage() {
     message: '',
   });
   const [errors, setErrors] = useState({});
+  const [isProcessing, setIsProcessing] = useState(false);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -120,12 +132,76 @@ export default function BookingPage() {
       return;
     }
 
-    toast({
-      title: "Redirecting to Stripe...",
-      description: "Please provide your Stripe keys to complete the setup.",
-    });
+    setIsProcessing(true);
 
-    console.log("Stripe checkout initiated with data:", formData);
+    try {
+      // Create checkout session
+      const response = await fetch('/api/create-checkout-session', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => ({ error: 'Unknown error' }));
+        throw new Error(errorData.error || 'Failed to create checkout session');
+      }
+
+      const data = await response.json();
+      console.log('✅ Checkout session created:', { sessionId: data.sessionId, hasUrl: !!data.url });
+
+      // Check if we have a sessionId or URL
+      if (!data.sessionId && !data.url) {
+        throw new Error('No session ID or URL received from server');
+      }
+
+      // Prefer direct URL redirect (more reliable)
+      if (data.url) {
+        console.log('🔄 Redirecting to Stripe checkout URL...');
+        window.location.href = data.url;
+        return; // Don't set isProcessing to false, we're redirecting
+      }
+
+      // Fallback: Use Stripe.js redirectToCheckout
+      if (data.sessionId) {
+        console.log('🔄 Using Stripe.js redirect...');
+        try {
+          const stripe = await stripePromise;
+          
+          if (!stripe) {
+            throw new Error('Stripe not initialized');
+          }
+
+          const { error } = await stripe.redirectToCheckout({
+            sessionId: data.sessionId,
+          });
+
+          if (error) {
+            console.error('❌ Stripe redirect error:', error);
+            throw new Error(error.message);
+          }
+          // Success - redirecting, don't set isProcessing to false
+          return;
+        } catch (stripeError) {
+          console.error('❌ Stripe.js redirect failed:', stripeError);
+          // Last resort: construct URL from sessionId
+          const checkoutUrl = `https://checkout.stripe.com/pay/${data.sessionId}`;
+          console.log('🔄 Using fallback URL:', checkoutUrl);
+          window.location.href = checkoutUrl;
+          return;
+        }
+      }
+    } catch (error) {
+      console.error('Error in checkout process:', error);
+      setIsProcessing(false);
+      toast({
+        variant: "destructive",
+        title: "Payment Error",
+        description: error.message || "There was an error processing your payment. Please try again or contact us directly.",
+      });
+    }
   };
 
   const services = [
@@ -249,10 +325,14 @@ export default function BookingPage() {
               <h2 className="text-3xl font-bold section-title mb-8">2. Choose How to Book</h2>
               <div className="max-w-2xl mx-auto grid sm:grid-cols-2 gap-6">
                 <motion.div whileHover={{ scale: 1.02 }} className="w-full">
-                    <Button onClick={handleStripeCheckout} className="w-full primary-cta text-lg !py-6 flex-col h-auto">
+                    <Button 
+                      onClick={handleStripeCheckout} 
+                      className="w-full primary-cta text-lg !py-6 flex-col h-auto"
+                      disabled={isProcessing}
+                    >
                         <div className="flex items-center">
                             <CreditCard className="w-6 h-6 mr-3" />
-                            <span>Confirm & Pay Online</span>
+                            <span>{isProcessing ? 'Processing...' : 'Confirm & Pay Online'}</span>
                         </div>
                         <span className="text-xs font-normal opacity-80 mt-1">Fastest way to secure your spot via Stripe</span>
                     </Button>

@@ -2,17 +2,19 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import { 
-  Tag, 
-  CalendarCheck, 
-  Wallet, 
-  CheckCircle, 
-  Star, 
-  Award, 
-  Users, 
-  Clock, 
-  MapPin 
+import {
+  Tag,
+  CalendarCheck,
+  Wallet,
+  CheckCircle,
+  Star,
+  Award,
+  Users,
+  Clock,
+  MapPin
 } from 'lucide-react';
+import Seo from '@/components/Seo';
+import { organizationSchema } from '@/lib/siteConfig';
 
 const ReviewCard = ({ name, review, rating, delay }) => (
   <motion.div
@@ -77,6 +79,13 @@ export default function PricingPage() {
 
   return (
     <div className="py-20 lg:py-28 page-background-light">
+      <Seo
+        title="Emergency Dental Pricing in Manchester & Bolton | Transparent Fees"
+        description="Clear, upfront pricing for emergency dental care in Manchester & Bolton. No hidden fees — see our consultation and treatment costs before you book your same-day appointment."
+        path="/pricing"
+        keywords={["emergency dental costs", "dentist prices Manchester", "emergency dental fees Bolton", "affordable emergency dentist"]}
+        schema={organizationSchema}
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ y: -30, opacity: 0 }}
