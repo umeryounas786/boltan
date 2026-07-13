@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://urgentdentalcare.co.uk/sitemap.xml
