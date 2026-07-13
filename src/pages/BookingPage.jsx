@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -20,6 +19,8 @@ import {
 import { loadStripe } from '@stripe/stripe-js';
 import { Link, useNavigate } from 'react-router-dom';
 import FaqAccordion from '@/components/FaqAccordion';
+import Seo from '@/components/Seo';
+import { organizationSchema } from '@/lib/siteConfig';
 
 // Initialize Stripe - use environment variable or fallback to provided key
 const STRIPE_PUBLISHABLE_KEY = import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY;
@@ -219,10 +220,23 @@ export default function BookingPage() {
 
   return (
     <>
-      <Helmet>
-        <title>Book Appointment - Emergency Dental Care Manchester</title>
-        <meta name="description" content="Secure your emergency dental appointment online. Choose to pay securely with Stripe or contact us to book directly. Fast, easy, and reliable booking." />
-      </Helmet>
+      <Seo
+        title="Book an Emergency Dental Appointment | Manchester & Bolton"
+        description="Secure your emergency dental appointment online. Pay securely with Stripe or contact us to book directly. Fast, easy, same-day booking with GDC-registered emergency dentists."
+        path="/book-appointment"
+        keywords={["book emergency dentist", "same-day dental appointment Manchester", "online dental booking", "emergency dentist Bolton booking"]}
+        schema={{
+          ...organizationSchema,
+          mainEntityOfPage: {
+            "@type": "FAQPage",
+            mainEntity: bookingFAQs.map((f) => ({
+              "@type": "Question",
+              name: f.question,
+              acceptedAnswer: { "@type": "Answer", text: f.answer },
+            })),
+          },
+        }}
+      />
       <div className="page-background-light">
         <section className="py-20 lg:py-28">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

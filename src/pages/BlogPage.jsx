@@ -4,6 +4,9 @@ import { BlogPreview as BlogContent } from '@/components/BlogPreview';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { Edit3, MessageCircle, Phone, Rss } from 'lucide-react';
+import Seo from '@/components/Seo';
+import { SITE_URL, SITE_NAME } from '@/lib/siteConfig';
+import { blogPostsData } from '@/lib/blogData';
 
 const EMERGENCY_NUMBER = "07375064619";
 
@@ -15,8 +18,30 @@ export default function BlogPage() {
   const handleWhatsAppChat = () => {
     window.open(`https://wa.me/${EMERGENCY_NUMBER.replace(/-/g, "")}`, '_blank');
   };
+  const blogSchema = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "@id": `${SITE_URL}/blog/#blog`,
+    name: `${SITE_NAME} — Emergency Dental Blog`,
+    url: `${SITE_URL}/blog`,
+    description: "Expert advice, tips, and insights for handling dental emergencies and maintaining your oral health.",
+    blogPost: blogPostsData.slice(0, 20).map((p) => ({
+      "@type": "BlogPosting",
+      headline: p.title,
+      url: `${SITE_URL}/blog/${p.slug}`,
+      author: { "@type": "Person", name: p.author },
+    })),
+  };
+
   return (
     <div className="py-20 lg:py-28 page-background-light">
+      <Seo
+        title="Emergency Dental Blog | Expert Advice for Manchester & Bolton"
+        description="Expert advice, tips, and insights for handling dental emergencies — from severe toothache and broken teeth to abscesses, sedation, and children's dental emergencies."
+        path="/blog"
+        keywords={["emergency dental blog", "dental emergency tips", "toothache advice", "dental first aid"]}
+        schema={blogSchema}
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ y: -30, opacity: 0 }}

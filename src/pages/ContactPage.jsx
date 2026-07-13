@@ -203,8 +203,25 @@ export default function ContactPage() {
   };
 
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: contactFAQs.map((f) => ({
+      "@type": "Question",
+      name: f.question,
+      acceptedAnswer: { "@type": "Answer", text: f.answer },
+    })),
+  };
+
   return (
     <div className="page-background-light contact-page-light">
+      <Seo
+        title="Contact Our Emergency Dentist in Radcliffe, Manchester"
+        description="Get in touch for urgent dental care. Call our 24/7 emergency line, message us on WhatsApp, or visit us at 265 Bolton Road, Radcliffe, Manchester M26 3QP. Same-day appointments available."
+        path="/contact"
+        keywords={["contact emergency dentist Manchester", "dentist Radcliffe", "emergency dental line", "dentist near me Bolton"]}
+        schema={[organizationSchema, faqSchema]}
+      />
       <section className="py-16 sm:py-20 lg:py-28">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div

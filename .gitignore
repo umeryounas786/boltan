@@ -1,7 +1,5 @@
-<<<<<<< HEAD
 node_modules
 lib
-=======
 # node_modules/
 node_modules/
 
@@ -9,4 +7,4 @@ node_modules/
 .env
 .env.local
 .env.production
->>>>>>> b72830d479368e90c95fb4b28b9fe9305fa036d8
+dist/

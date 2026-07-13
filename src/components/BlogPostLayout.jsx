@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Phone, Calendar, ArrowLeft } from 'lucide-react';
 import { blogPostsData } from '@/lib/blogData';
+import Seo from '@/components/Seo';
+import { SITE_URL, SITE_NAME, absUrl, organizationSchema } from '@/lib/siteConfig';
 
 const EMERGENCY_NUMBER = "07375064619";
 
@@ -17,10 +19,55 @@ const RecommendedPostCard = ({ post }) => (
 
 const BlogPostLayout = ({ children }) => {
   const currentPath = window.location.pathname;
+  const currentSlug = currentPath.replace(/^\/blog\//, '').replace(/\/$/, '');
+  const currentPost = blogPostsData.find(p => p.slug === currentSlug);
   const recommendedPosts = blogPostsData.filter(p => !currentPath.includes(p.slug)).slice(0, 3);
+
+  const postSeo = currentPost && (() => {
+    const url = `${SITE_URL}/blog/${currentPost.slug}`;
+    const image = absUrl(currentPost.imgSrc);
+    const articleSchema = {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "@id": `${url}/#article`,
+      headline: currentPost.title,
+      description: currentPost.excerpt,
+      image,
+      author: { "@type": "Person", name: currentPost.author },
+      publisher: { "@id": `${SITE_URL}/#organization` },
+      mainEntityOfPage: { "@type": "WebPage", "@id": url },
+      articleSection: currentPost.category,
+      keywords: Array.isArray(currentPost.keywords)
+        ? currentPost.keywords.join(', ')
+        : currentPost.keywords,
+    };
+    const breadcrumbSchema = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+        { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_URL}/blog` },
+        { "@type": "ListItem", position: 3, name: currentPost.title, item: url },
+      ],
+    };
+    return { url, image, articleSchema, breadcrumbSchema };
+  })();
 
   return (
     <div className="bg-brand-slate-background page-background-light">
+      {currentPost && (
+        <Seo
+          title={currentPost.title}
+          description={currentPost.excerpt}
+          canonical={postSeo.url}
+          image={postSeo.image}
+          type="article"
+          keywords={currentPost.keywords}
+          titleTemplate={false}
+          article={{ author: currentPost.author, section: currentPost.category }}
+          schema={[organizationSchema, postSeo.articleSchema, postSeo.breadcrumbSchema]}
+        />
+      )}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
