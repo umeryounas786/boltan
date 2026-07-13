@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Anya Sharma",
   readTime: "8 min read",
   category: "Dental Injuries",
-  imgSrc: "https://images.unsplash.com/photo-1629904853716-f0bc54eea48d",
+  imgSrc: "/images/image6.webp",
   imgAlt: "A dentist carefully applying composite material to a chipped front tooth.",
 };
 
@@ -46,7 +46,7 @@ const BrokenToothPost = () => {
       
       <p className="lead">That sickening crunch, followed by the discovery of a piece of your tooth—it’s a startling and common dental emergency. Whether from a fall, a sports injury, or biting down on something hard, a broken or chipped tooth requires immediate attention. Here’s what you should do and how we can professionally restore your smile.</p>
       
-      <img  src={post.imgSrc} alt={post.imgAlt} src="https://images.unsplash.com/photo-1690167687106-180b0ea1d813" />
+      <img  src={post.imgSrc} alt={post.imgAlt} />
 
       <h2>Immediate First-Aid for a Broken Tooth</h2>
       <p>Your actions in the first few minutes can make a big difference. Follow these steps before you get to our clinic:</p>

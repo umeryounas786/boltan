@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Ben Carter",
   readTime: "10 min read",
   category: "Sedation Dentistry",
-  imgSrc: "https://images.unsplash.com/photo-1629904791657-8a6f3b393568",
+  imgSrc: "/images/image44.webp",
   imgAlt: "A modern dental operatory with equipment for sedation, including a nitrous oxide mask.",
 };
 
@@ -44,7 +44,7 @@ const TypesOfSedationPost = () => {
       
       <p className="lead">When facing a dental emergency, knowing that you can receive treatment in a comfortable, anxiety-free environment makes all the difference. Sedation dentistry offers a range of options to suit different needs and anxiety levels. As a leading emergency dentist with sedation in Bolton and Manchester, we offer two primary types of conscious sedation to ensure your safety and comfort.</p>
       
-      <img src={post.imgSrc} alt={post.imgAlt} />
+      <img className="w-full h-auto" src={post.imgSrc} alt={post.imgAlt}/>
 
       <h2>Option 1: Nitrous Oxide (Inhalation Sedation)</h2>
       <p>Commonly known as "laughing gas," nitrous oxide is a mild sedative that is inhaled through a small, comfortable mask placed over your nose. It's a time-tested and extremely safe option for managing dental anxiety.</p>

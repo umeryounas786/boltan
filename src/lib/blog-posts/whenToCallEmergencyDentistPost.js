@@ -8,7 +8,7 @@ export const whenToCallEmergencyDentistPost = {
   author: "Dr. Anya Sharma",
   category: "Patient Education",
   icon: AlertTriangle,
-  imgSrc: "https://images.unsplash.com/photo-1576091160550-2173dba9996a",
+  imgSrc: "./images/image50.webp",
   imageDescription: "A person holding a phone, looking concerned, about to call for an emergency.",
   internalLink: "/contact",
   internalLinkText: "Contact Our Emergency Line",

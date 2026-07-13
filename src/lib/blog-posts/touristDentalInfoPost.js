@@ -8,7 +8,7 @@ export const touristDentalInfoPost = {
   readTime: "6 min read",
   category: "Visitor Information",
   icon: Plane,
-  imgSrc: "https://images.unsplash.com/photo-1533106418989-88406e768237",
+  imgSrc: "./images/image43.webp",
   imageDescription: "A suitcase and travel map placed on a bed, representing a tourist in a new city.",
   internalLink: "/contact",
   internalLinkText: "Emergency Tourist Services",

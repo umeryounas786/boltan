@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Anya Sharma",
   readTime: "7 min read",
   category: "First Aid",
-  imgSrc: "https://images.unsplash.com/photo-1579621970795-87facc2f976d",
+  imgSrc: "/images/image49.jpg",
   imgAlt: "A person holding their jaw in pain, symbolizing severe toothache.",
 };
 
@@ -46,7 +46,7 @@ const WhatToDoSevereToothachePost = () => {
       
       <p className="lead">Severe toothache can strike at any time, leaving you in agonizing pain and desperately searching for relief. While no home remedy can replace professional dental treatment, there are steps you can take to manage the pain and discomfort before you can get to an emergency dentist in Manchester or Bolton. Follow these guidelines to find some quick pain relief during a dental emergency.</p>
       
-      <img src={post.imgSrc} alt={post.imgAlt} />
+      <img src={post.imgSrc} alt={post.imgAlt} className="w-full h-auto" />
 
       <h2>1. Clean the Area Thoroughly</h2>
       <p>Gently brush and floss around the painful tooth to remove any trapped food particles that might be aggravating the issue. Sometimes, a simple piece of food stuck between teeth can cause surprising discomfort.</p>

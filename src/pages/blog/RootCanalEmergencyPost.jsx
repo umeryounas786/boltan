@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Chloe Davis",
   readTime: "8 min read",
   category: "Treatments",
-  imgSrc: "https://images.unsplash.com/photo-1591123720169-2602f65b9a1a",
+  imgSrc: "/images/image36.png",
   imgAlt: "Close-up of a dental X-ray showing tooth roots and surrounding bone.",
 };
 
@@ -46,7 +46,7 @@ const RootCanalEmergencyPost = () => {
       
       <p className="lead">When severe tooth pain strikes, or you discover swelling due to an infected tooth, an emergency root canal becomes a critical intervention. This procedure is not only designed to alleviate agonizing pain swiftly but also to save your natural tooth from irreversible infection and potential extraction. Let’s demystify what an urgent root canal involves and why it's a true lifesaver for your smile.</p>
       
-      <img src={post.imgSrc} alt={post.imgAlt} />
+      <img src={post.imgSrc} alt={post.imgAlt} className="w-full h-auto" />
 
       <h2>Why an Emergency Root Canal is Needed</h2>
       <p>An emergency root canal is required when the soft inner part of your tooth, called the pulp (containing nerves and blood vessels), becomes severely infected or inflamed. This can happen due to:</p>

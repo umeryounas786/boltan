@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Ben Carter",
   readTime: "9 min read",
   category: "Diagnosis",
-  imgSrc: "https://images.unsplash.com/photo-1621251390311-66c30f40ce7e",
+  imgSrc: "/images/image42.webp",
   imgAlt: "A close-up of a tooth, highlighting dental issues like decay.",
 };
 
@@ -46,7 +46,7 @@ const TopCausesToothPainPost = () => {
       
       <p className="lead">Tooth pain can be debilitating, often striking without warning and causing immense discomfort. Understanding the common causes behind your toothache is the first step towards getting effective treatment. An emergency dentist in Manchester is equipped to diagnose and treat these issues quickly, providing much-needed relief. Let's explore the top culprits and how they're handled.</p>
       
-      <img src={post.imgSrc} alt={post.imgAlt} />
+      <img src={post.imgSrc} alt={post.imgAlt} className="w-full h-auto" />
 
       <h2>1. Dental Cavities (Tooth Decay)</h2>
       <p>Cavities are the most common cause of tooth pain. When bacteria in your mouth produce acids that erode tooth enamel, they create holes. If a cavity reaches the inner layers of the tooth (dentin or pulp), it can cause sensitivity to hot, cold, or sweet foods, and eventually, severe, persistent pain.</p>

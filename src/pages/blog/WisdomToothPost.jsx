@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Anya Sharma",
   readTime: "8 min read",
   category: "Pain Management",
-  imgSrc: "https://images.unsplash.com/photo-1619451439344-a0c4a8993c47",
+  imgSrc: "/images/image52.webp",
   imgAlt: "A person holding their jaw in discomfort, illustrating the severe pain from a wisdom tooth.",
 };
 
@@ -46,7 +46,7 @@ const WisdomToothPost = () => {
       
       <p className="lead">The deep, radiating pain of an erupting or infected wisdom tooth is one of the most common dental emergencies. This intense discomfort can disrupt your sleep, work, and life. This guide offers immediate tips for pain relief and explains when it's crucial to seek emergency dental treatment in Manchester.</p>
       
-      <img  src={post.imgSrc} alt={post.imgAlt} src="https://images.unsplash.com/photo-1679136287096-cb864ebf9b10" />
+      <img  src={post.imgSrc} alt={post.imgAlt} className='w-full h-auto' />
 
       <h2>Immediate At-Home Relief: What You Can Do Right Now</h2>
       <p>While these tips won't solve the underlying problem, they can provide temporary relief while you arrange to see a dentist:</p>

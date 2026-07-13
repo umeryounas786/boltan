@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Chloe Davis",
   readTime: "8 min read",
   category: "Pediatric Care",
-  imgSrc: "https://images.unsplash.com/photo-1594495894542-a46cc73e081a",
+  imgSrc: "/images/image48.jpg",
   imgAlt: "A parent gently comforting their child, representing care during an emergency.",
 };
 
@@ -46,7 +46,7 @@ const WhatToDoIfChildKnocksOutToothPost = () => {
       
       <p className="lead">A knocked-out tooth (avulsed tooth) is one of the most serious dental emergencies for a child. It's a frightening experience, but your calm and swift actions can make the difference between losing and saving the tooth. This guide provides the critical first-aid steps you need to know.</p>
       
-      <img src={post.imgSrc} alt={post.imgAlt} />
+        <img src={post.imgSrc} alt={post.imgAlt} className="w-full h-auto" />
 
       <h2>Permanent Tooth vs. Baby Tooth: A Critical Difference</h2>
       <p>The first thing to determine is whether the knocked-out tooth is a primary (baby) tooth or a permanent (adult) tooth. The advice is very different for each.</p>

@@ -8,7 +8,7 @@ export const urgentVsRoutineCarePost = {
   author: "Dr. Chloe Davis",
   category: "Patient Education",
   icon: ArrowRightLeft,
-  imgSrc: "https://images.unsplash.com/photo-1526256262350-7da7584cf5eb",
+  imgSrc: "./images/image45.jpg",
   imageDescription: "A split image showing a dental emergency on one side and a routine check-up on the other.",
   internalLink: "/services",
   internalLinkText: "Emergency Dentistry Overview",

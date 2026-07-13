@@ -8,7 +8,7 @@ export const pediatricEmergenciesPost = {
   author: "Dr. Chloe Davis",
   category: "Family & Kids",
   icon: Brush,
-  imgSrc: "https://images.unsplash.com/photo-1562222403-e29a87299107",
+  imgSrc: "./images/image34.jpg",
   imageDescription: "A child smiling bravely in a dental chair, with a friendly dentist nearby.",
   internalLink: "/contact",
   internalLinkText: "Learn More & Inquire",

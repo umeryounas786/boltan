@@ -8,7 +8,7 @@ export const pediatricDentalEmergenciesFastActionPost = {
   author: "Dr. Ben Carter",
   category: "Pediatric Care",
   icon: AlertTriangle,
-  imgSrc: "https://images.unsplash.com/photo-1503213521139-3a11c1939352",
+  imgSrc: "./images/image43.webp",
   imageDescription: "A parent looking closely at their child's mouth with a flashlight, representing quick assessment.",
   internalLink: "/services",
   internalLinkText: "Our Pediatric Services",

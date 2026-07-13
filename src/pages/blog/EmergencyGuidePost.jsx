@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Chloe Davis",
   readTime: "12 min read",
   category: "Patient Education",
-  imgSrc: "https://images.unsplash.com/photo-1536856093144-884391745479",
+  imgSrc: "/images/image19.avif",
   imgAlt: "A person looking concerned in a bathroom mirror, possibly due to a dental issue.",
 };
 
@@ -49,7 +49,7 @@ const EmergencyGuidePost = () => {
       
       <p className="lead">Dental emergencies can be sudden, painful, and alarming. Knowing what to look for, how to provide immediate first aid, and when to call an emergency dentist can make all the difference in saving a tooth and alleviating discomfort. This comprehensive guide will equip you with the knowledge to handle common dental crises calmly and effectively.</p>
       
-      <img  src={post.imgSrc} alt={post.imgAlt} src="https://images.unsplash.com/photo-1563551385652-2a6a2d099736" />
+      <img  src={post.imgSrc} alt={post.imgAlt} />
 
       <h2>Recognizing the Signs: When to Call an Emergency Dentist</h2>
       <p>Not all dental issues require immediate emergency care, but some demand urgent attention. Here are the key signs you need emergency dentist help:</p>

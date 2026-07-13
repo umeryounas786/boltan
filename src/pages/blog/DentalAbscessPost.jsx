@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Chloe Davis",
   readTime: "7 min read",
   category: "Infections",
-  imgSrc: "https://images.unsplash.com/photo-1631590102635-e4349a3e3995",
+  imgSrc: "/images/image11.avif",
   imgAlt: "A dentist examining a dental x-ray, pointing to the root of a tooth where an abscess might form.",
 };
 
@@ -46,7 +46,7 @@ const DentalAbscessPost = () => {
       
       <p className="lead">Waking up to a swollen face or discovering a painful, pimple-like bump on your gum can be frightening. These are classic signs of a dental abscess, a serious bacterial infection that requires immediate medical attention. Ignoring it is not an option; here's what you need to know.</p>
       
-      <img src={post.imgSrc} alt={post.imgAlt} />
+      <img src={post.imgSrc} alt={post.imgAlt} className="w-full h-auto" />
 
       <h2>Recognizing the Signs of a Dental Abscess</h2>
       <p>A dental abscess is a pocket of pus that collects around the root of a tooth. It's your body's attempt to contain an infection. You must seek emergency dental care if you experience a combination of these symptoms:</p>

@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Ben Carter",
   readTime: "6 min read",
   category: "Visitor Information",
-  imgSrc: "https://images.unsplash.com/photo-1533106418989-88406e768237",
+  imgSrc: "/images/image43.jpg",
   imgAlt: "A suitcase and travel map placed on a bed, representing a tourist in a new city.",
 };
 
@@ -46,7 +46,7 @@ const TouristDentalInfoPost = () => {
       
       <p className="lead">You've planned your trip to Manchester, ready to explore the vibrant culture, history, and nightlife. The last thing you expect is a debilitating toothache or a broken tooth. A dental emergency away from home can be stressful, but knowing how to access care quickly can save your holiday.</p>
       
-      <img  src={post.imgSrc} alt={post.imgAlt} src="https://images.unsplash.com/photo-1679136287096-cb864ebf9b10" />
+      <img  src={post.imgSrc} alt={post.imgAlt} />
 
       <h2>Your Best Option: Private Emergency Dental Care</h2>
       <p>While the UK has the National Health Service (NHS), accessing emergency dental care through this route can be slow and confusing for a visitor. The fastest and most straightforward way to get treatment is to contact a private emergency dental clinic. We are accustomed to helping tourists and international visitors and can get you seen promptly.</p>

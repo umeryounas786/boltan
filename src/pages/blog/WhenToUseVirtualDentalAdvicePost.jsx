@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Anya Sharma",
   readTime: "9 min read",
   category: "Virtual Care",
-  imgSrc: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9",
+  imgSrc: "/images/image51.jpg",
   imgAlt: "A person relaxing at home on a couch while using their laptop, symbolizing the convenience of virtual advice.",
 };
 
@@ -44,7 +44,7 @@ const WhenToUseVirtualDentalAdvicePost = () => {
       
       <p className="lead">In the middle of a busy week, a dental issue can feel like a major disruption. But what if you could get expert advice without leaving your home or office? Teledentistry makes this possible, serving as a powerful tool for remote dental triage. Here’s a guide to situations where virtual dental advice can save you a trip to the clinic.</p>
       
-      <img src={post.imgSrc} alt={post.imgAlt} />
+        <img src={post.imgSrc} alt={post.imgAlt} className="w-full h-auto" />
 
       <h2>Green Light: Scenarios Perfect for a Virtual Consultation</h2>
       <p>If you're in Bolton, Bury, or anywhere in Greater Manchester and experiencing one of the following, a virtual visit is an ideal first step:</p>

@@ -8,7 +8,7 @@ export const neverIgnoreEmergenciesPost = {
   author: "Dr. Ben Carter",
   category: "Patient Education",
   icon: Siren,
-  imgSrc: "https://images.unsplash.com/photo-1512484776495-a09d92e87c3b",
+  imgSrc: "./images/image32.jpg",
   imageDescription: "An open book with a pair of glasses, symbolizing learning and patient education.",
   internalLink: "/services",
   internalLinkText: "View Our Emergency Services",

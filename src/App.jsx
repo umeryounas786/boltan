@@ -54,7 +54,7 @@ const GetEmergencyTreatmentPost = React.lazy(() => import('@/pages/blog/GetEmerg
 // New Blog Posts - Cluster 2 (Toothache)
 const WhatToDoSevereToothachePost = React.lazy(() => import('@/pages/blog/WhatToDoSevereToothachePost'));
 const TopCausesToothPainPost = React.lazy(() => import('@/pages/blog/TopCausesToothPainPost'));
-const HowFastEmergencyDentistPost = React.lazy(() => import('@/pages/blog/HowFastEmergencyDentistPost'));
+const HowFastEmergencyDentistPost = React.lazy(() => import('./lib/blog-posts/howFastEmergencyDentistPost'));
 
 // New Blog Posts - Cluster 3 (Broken Teeth)
 const HandleBrokenKnockedOutToothPost = React.lazy(() => import('@/pages/blog/HandleBrokenKnockedOutToothPost'));

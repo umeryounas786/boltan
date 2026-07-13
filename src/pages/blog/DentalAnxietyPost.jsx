@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Chloe Davis",
   readTime: "9 min read",
   category: "Patient Comfort",
-  imgSrc: "https://images.unsplash.com/photo-1576091160550-2173dba9996a",
+  imgSrc: "/images/image12.avif",
   imgAlt: "A compassionate dentist warmly reassuring a patient in a modern clinic.",
 };
 
@@ -46,7 +46,7 @@ const DentalAnxietyPost = () => {
       
       <p className="lead">A dental emergency is stressful enough on its own. When you add dental anxiety or phobia into the mix, the situation can feel completely overwhelming. Many people delay getting crucial care because of fear, which only allows the problem to get worse. We want you to know there is a better way. Our sedation options are designed to transform your emergency visit into a calm and manageable experience.</p>
       
-      <img  src={post.imgSrc} alt={post.imgAlt} src="https://images.unsplash.com/photo-1674775372047-27fb6492c9a2" />
+      <img  src={post.imgSrc} alt={post.imgAlt} />
 
       <h2>You Are Not Alone: Understanding Emergency Dental Anxiety</h2>
       <p>Fear of the dentist is one of the most common anxieties. During an emergency, this is amplified by pain and a sense of urgency. At our clinic, we approach every patient with compassion and understanding. Our entire process is built around ensuring your physical and emotional comfort.</p>

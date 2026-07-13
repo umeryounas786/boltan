@@ -8,7 +8,7 @@ export const handleBrokenKnockedOutToothPost = {
   author: "Dr. Ben Carter",
   category: "First Aid",
   icon: HeartCrack,
-  imgSrc: "https://images.unsplash.com/photo-1629904853716-f0bc54eea48d",
+  imgSrc: "./images/image25.webp",
   imageDescription: "A person carefully holding a knocked out tooth, ready for transport to the dentist.",
   internalLink: "/contact",
   internalLinkText: "Contact Us Immediately",

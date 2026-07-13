@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Ben Carter",
   readTime: "10 min read",
   category: "Patient Guide",
-  imgSrc: "https://images.unsplash.com/photo-1553729459-efe14ef6055d",
+  imgSrc: "/images/image17.jpg",
   imgAlt: "A calculator and pound sterling notes, representing the cost of dental care.",
 };
 
@@ -48,7 +48,7 @@ const EmergencyDentalCostPost = () => {
       
       <p className="lead">When you're facing a dental emergency, the last thing you want to worry about is the cost. However, understanding the potential fees associated with urgent dental care can help you make informed decisions without adding financial stress to an already painful situation. This guide provides a transparent overview of emergency dental costs in the UK, with a focus on services in Manchester, Bolton, Bury, and Radcliffe.</p>
       
-      <img  src={post.imgSrc} alt={post.imgAlt} src="https://images.unsplash.com/photo-1555432643-322859eea172" />
+      <img  src={post.imgSrc} alt={post.imgAlt} />
 
       <h2>Understanding the Components of Emergency Dental Costs</h2>
       <p>The total bill for an emergency visit is typically made up of a few key parts:</p>

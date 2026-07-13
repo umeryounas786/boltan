@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Chloe Davis",
   readTime: "6 min read",
   category: "First Aid",
-  imgSrc: "https://images.unsplash.com/photo-1594394213447-a7c7b5241a8a",
+  imgSrc: "/images/image23.webp",
   imgAlt: "A person looking closely into a mirror at their teeth, concerned about a lost filling.",
 };
 
@@ -46,7 +46,7 @@ const FixLostFillingPost = () => {
       
       <p className="lead">That moment of realization—a hard piece in your food that turns out to be a lost filling—can be jarring. Your tooth now feels strange and sensitive. While your first instinct might be to find a quick fix, it's crucial to understand what you can do at home and why calling an emergency dentist must be your top priority.</p>
       
-      <img  src={post.imgSrc} alt={post.imgAlt} src="https://images.unsplash.com/photo-1679136287096-cb864ebf9b10" />
+      <img  src={post.imgSrc} alt={post.imgAlt} />
 
       <h2>The Temporary At-Home Solution: A Bridge to the Dentist</h2>
       <p>The main goal of an at-home fix is to temporarily cover the exposed, sensitive part of your tooth and prevent food from getting trapped in the cavity. The best way to do this is with a temporary dental filling kit, available at most pharmacies.</p>

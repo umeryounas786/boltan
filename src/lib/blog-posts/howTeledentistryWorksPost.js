@@ -8,7 +8,7 @@ export const howTeledentistryWorksPost = {
   author: "Dr. Ben Carter",
   category: "Virtual Care",
   icon: Wifi,
-  imgSrc: "https://images.unsplash.com/photo-1554734867-bf3c00a49371",
+  imgSrc: "./images/image27.webp",
   imageDescription: "A person smiling while on a video call on their laptop, showing the ease of teledentistry.",
   internalLink: "/contact",
   internalLinkText: "Book a Virtual Consultation",

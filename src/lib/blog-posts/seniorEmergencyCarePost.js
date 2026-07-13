@@ -8,7 +8,7 @@ export const seniorEmergencyCarePost = {
   author: "Dr. Anya Sharma",
   category: "Senior Care",
   icon: Users,
-  imgSrc: "https://images.unsplash.com/photo-1592890287445-f2410770827f",
+  imgSrc: "./images/image39.webp",
   imageDescription: "A senior patient smiling comfortably in a dental chair, with a caring dentist.",
   internalLink: "/services",
   internalLinkText: "Explore Denture & Veneer Services",

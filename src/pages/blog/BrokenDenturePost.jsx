@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Ben Carter",
   readTime: "7 min read",
   category: "Denture Care",
-  imgSrc: "https://images.unsplash.com/photo-1625498542638-857fb3734d84",
+  imgSrc: "/images/image4.jpg",
   imgAlt: "A pair of dentures on a dental technician's workbench, mid-repair.",
 };
 
@@ -46,7 +46,7 @@ const BrokenDenturePost = () => {
       
       <p className="lead">A broken denture is far more than a simple inconvenience—it's a genuine dental emergency that can disrupt your ability to eat, speak, and feel confident. When your denture breaks, you need a fast and reliable solution. Here’s a guide on what to do and how our emergency denture repair service in Manchester can help.</p>
       
-      <img  src={post.imgSrc} alt={post.imgAlt} src="https://images.unsplash.com/photo-1612283105644-7ff66a3d5d8d" />
+      <img  src={post.imgSrc} alt={post.imgAlt} />
 
       <h2>The #1 Rule: Do Not Use Superglue!</h2>
       <p>It can be tempting to reach for a tube of superglue for a quick fix, but this is the worst thing you can do. Household glues are not biocompatible, meaning they are toxic and can cause severe irritation to your gums. Furthermore, they often fail to create a strong bond and can dissolve the denture material, making a professional repair impossible and forcing you to buy a completely new set.</p>

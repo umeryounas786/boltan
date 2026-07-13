@@ -8,7 +8,7 @@ export const inClinicSedationPost = {
   author: "Dr. Anya Sharma",
   category: "Patient Comfort",
   icon: UserCheck,
-  imgSrc: "https://images.unsplash.com/photo-1629904791657-8a6f3b393568",
+  imgSrc: "./images/image28.webp",
   imageDescription: "A calm and relaxed patient in a modern dental operatory, signifying a stress-free experience.",
   internalLink: "/contact",
   internalLinkText: "Learn More & Inquire",

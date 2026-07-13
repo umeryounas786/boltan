@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Ben Carter",
   readTime: "9 min read",
   category: "Pediatric Care",
-  imgSrc: "https://images.unsplash.com/photo-1503213521139-3a11c1939352",
+  imgSrc: "/images/image43.webp",
   imgAlt: "A parent looking closely at their child's mouth with a flashlight, representing quick assessment.",
 };
 
@@ -46,7 +46,7 @@ const PediatricDentalEmergenciesFastActionPost = () => {
       
       <p className="lead">Childhood is full of tumbles, bumps, and unexpected pains. When a dental emergency strikes, a parent's quick, informed response can prevent complications and ease a child's distress. This guide covers some of the most common pediatric dental emergencies and the immediate actions you should take.</p>
       
-      <img src={post.imgSrc} alt={post.imgAlt} />
+      <img src={post.imgSrc} alt={post.imgAlt} className="w-full h-auto" />
 
       <h2>Emergency 1: The Severe Toothache</h2>
       <p>A toothache is your child's way of saying something is wrong. It could be a deep cavity, an emerging tooth, or an infection.</p>

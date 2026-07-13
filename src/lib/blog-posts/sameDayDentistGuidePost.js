@@ -8,7 +8,7 @@ export const sameDayDentistGuidePost = {
   author: "Dr. Ben Carter",
   category: "Appointments",
   icon: CalendarCheck,
-  imgSrc: "https://images.unsplash.com/photo-1629909613638-0e4a1fad8f81",
+  imgSrc: "./images/image38.jpg",
   imageDescription: "A friendly dentist consulting with a patient, representing a successful same-day appointment.",
   internalLink: "/contact",
   internalLinkText: "Book a Same-Day Appointment",

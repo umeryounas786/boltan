@@ -8,7 +8,7 @@ export const topCausesToothPainPost = {
   author: "Dr. Ben Carter",
   category: "Diagnosis",
   icon: XCircle,
-  imgSrc: "https://images.unsplash.com/photo-1621251390311-66c30f40ce7e",
+  imgSrc: "./images/image42.webp",
   imageDescription: "A close-up of a tooth, highlighting dental issues like decay.",
   internalLink: "/services",
   internalLinkText: "View Our Emergency Services",

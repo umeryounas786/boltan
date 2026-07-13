@@ -8,7 +8,7 @@ export const facialSwellingToothInfectionPost = {
   author: "Dr. Anya Sharma",
   category: "First Aid",
   icon: UserX,
-  imgSrc: "https://images.unsplash.com/photo-1629904853716-f0bc54eea48d",
+  imgSrc: "./images/image22.webp",
   imageDescription: "A person with noticeable facial swelling, indicating a dental infection.",
   internalLink: "/contact",
   internalLinkText: "Get Urgent Advice",

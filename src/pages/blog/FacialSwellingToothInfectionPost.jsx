@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Anya Sharma",
   readTime: "7 min read",
   category: "First Aid",
-  imgSrc: "https://images.unsplash.com/photo-1629904853716-f0bc54eea48d",
+  imgSrc: "/images/image22.webp",
   imgAlt: "A person with noticeable facial swelling, indicating a dental infection.",
 };
 
@@ -46,7 +46,7 @@ const FacialSwellingToothInfectionPost = () => {
       
       <p className="lead">Finding your face swollen due to a tooth infection is a truly alarming experience. This isn't just a cosmetic issue; it's a critical sign that an infection is spreading and requires immediate attention. Knowing what to do before you can see an emergency dentist in Manchester can help manage symptoms and prevent severe complications.</p>
       
-      <img src={post.imgSrc} alt={post.imgAlt} />
+      <img src={post.imgSrc} alt={post.imgAlt} className="w-full h-auto" />
 
       <h2>Understanding the Danger of Facial Swelling</h2>
       <p>Facial swelling indicates that a dental infection (often an abscess) has breached the confines of your jawbone and is spreading into the soft tissues of your face and potentially your neck. If left untreated, this infection can lead to:</p>

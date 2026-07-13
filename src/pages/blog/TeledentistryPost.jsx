@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Ben Carter",
   readTime: "6 min read",
   category: "Virtual Care",
-  imgSrc: "https://images.unsplash.com/photo-1584433144859-1fc3ab64a957",
+  imgSrc: "/images/image41.jpg",
   imgAlt: "A person on a laptop having a video call with their dentist.",
 };
 
@@ -46,7 +46,7 @@ const TeledentistryPost = () => {
       
       <p className="lead">A severe toothache strikes late at night. You've chipped a tooth on vacation. You're unsure if your child's swollen gum needs immediate attention. In these moments of uncertainty and pain, teledentistry serves as your direct line to expert dental care, no matter where you are.</p>
       
-      <img  src={post.imgSrc} alt={post.imgAlt} src="https://images.unsplash.com/photo-1679136287096-cb864ebf9b10" />
+      <img  src={post.imgSrc} alt={post.imgAlt} />
 
       <h2>What is Teledentistry and How Does it Help in an Emergency?</h2>
       <p>Teledentistry is the use of telecommunications technology to provide dental care from a distance. Through secure, HIPAA-compliant video conferencing on your smartphone or computer, you can have a face-to-face consultation with one of our experienced emergency dentists. This "virtual visit" is a powerful tool for modern urgent care.</p>

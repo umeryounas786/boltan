@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Anya Sharma",
   readTime: "8 min read",
   category: "Patient Education",
-  imgSrc: "https://images.unsplash.com/photo-1576091160550-2173dba9996a",
+  imgSrc: "/images/image50.webp",
   imgAlt: "A person holding a phone, looking concerned, about to call for an emergency.",
 };
 

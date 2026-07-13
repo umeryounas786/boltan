@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Ben Carter",
   readTime: "7 min read",
   category: "Public Information",
-  imgSrc: "https://images.unsplash.com/photo-1586773860414-72476c3cce48",
+  imgSrc: "/images/image13.avif",
   imgAlt: "The bright red sign for a hospital's Accident & Emergency department.",
 };
 
@@ -46,7 +46,7 @@ const DentistVsAEPost = () => {
       
       <p className="lead">In the middle of the night, you're awakened by a throbbing, unbearable toothache. Your first instinct might be to head to the nearest hospital A&E department. However, for almost all dental emergencies, this is the wrong choice—one that can lead to wasted time, frustration, and unresolved pain.</p>
       
-      <img  src={post.imgSrc} alt={post.imgAlt} src="https://images.unsplash.com/photo-1588268393007-068bc70a443d" />
+      <img  src={post.imgSrc} alt={post.imgAlt} />
 
       <h2>The Critical Difference: Medical vs. Dental Care</h2>
       <p>Hospital A&E departments are designed to handle medical emergencies. They are staffed by brilliant doctors and nurses who can set broken bones, stitch wounds, and treat life-threatening conditions. What they are not, however, are dentists. They lack the specific training, diagnostic tools, and equipment needed to treat dental problems.</p>

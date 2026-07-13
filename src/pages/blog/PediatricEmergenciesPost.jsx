@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Chloe Davis",
   readTime: "7 min read",
   category: "Family & Kids",
-  imgSrc: "https://images.unsplash.com/photo-1562222403-e29a87299107",
+  imgSrc: "/images/image34.jpg",
   imgAlt: "A happy child sitting in a dental chair, feeling safe and comfortable.",
 };
 
@@ -46,7 +46,7 @@ const PediatricEmergenciesPost = () => {
       
       <p className="lead">As a parent, seeing your child in pain or distress is one of the most difficult experiences. When that distress comes from a dental emergency, knowing what to do and acting quickly can make all the difference. This guide is designed to empower families in Manchester, Bolton, and beyond with the knowledge to handle these stressful situations calmly and effectively.</p>
       
-      <img  src={post.imgSrc} alt={post.imgAlt} src="https://images.unsplash.com/photo-1679136287096-cb864ebf9b10" />
+      <img  src={post.imgSrc} alt={post.imgAlt} />
 
       <h2>The Golden Rule: Stay Calm</h2>
       <p>Your child will take cues from your reaction. By remaining calm and reassuring, you can help soothe their fear and anxiety. Our clinic specializes in creating a safe, child-focused environment to manage their dental needs with compassion and expertise.</p>

@@ -10,7 +10,7 @@ const post = {
   author: "Dr. Anya Sharma",
   readTime: "7 min read",
   category: "After Hours Care",
-  imgSrc: "https://images.unsplash.com/photo-1532285142689-495495958632",
+  imgSrc: "/images/image1.avif",
   imgAlt: "A city skyline at night, representing 24-hour availability.",
 };
 
@@ -46,7 +46,7 @@ const AfterHoursPainPost = () => {
       
       <p className="lead">A severe toothache is one of the worst pains imaginable, and it has a nasty habit of flaring up at the most inconvenient times—late at night, on a bank holiday, or in the middle of the weekend. When your regular dentist is closed, it's easy to feel helpless. But for residents of Manchester, our 24-hour emergency dental service means you're never alone.</p>
       
-      <img  src={post.imgSrc} alt={post.imgAlt} src="https://images.unsplash.com/photo-1703464094016-ef16febfcf5e" />
+      <img  src={post.imgSrc} alt={post.imgAlt} />
 
       <h2>First Steps When After-Hours Pain Strikes</h2>
       <p>Before you do anything else, the most important step is to call a professional. Our 24-hour emergency line is your first point of contact. We can provide immediate advice and determine if you need to be seen urgently.</p>

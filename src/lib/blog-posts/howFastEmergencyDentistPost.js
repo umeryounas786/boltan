@@ -8,7 +8,7 @@ export const howFastEmergencyDentistPost = {
   author: "Dr. Chloe Davis",
   category: "Treatment",
   icon: Rocket,
-  imgSrc: "https://images.unsplash.com/photo-1510427303043-4f05697669d0",
+  imgSrc: "./images/image26.jpg",
   imageDescription: "A clock showing time passing quickly, symbolizing rapid relief from toothache.",
   internalLink: "/pricing",
   internalLinkText: "Our Transparent Pricing",
